@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,6 +15,58 @@
     rel="stylesheet"
   />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .site-header,
+    .section-heading,
+    .section-intro,
+    .section-links,
+    .site-footer {
+      text-align: center;
+    }
+
+    .intro-card {
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    .intro-card .timeline-text p {
+      margin: 0;
+    }
+
+    .timeline-entry.compact-gap {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .timeline-entry.medium-gap {
+      margin-top: 3.5rem;
+      margin-bottom: 3.5rem;
+    }
+
+    .timeline-entry.large-gap {
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+    }
+
+    .timeline-entry.xlarge-gap {
+      margin-top: 6.75rem;
+      margin-bottom: 6.75rem;
+    }
+
+    .name-highlight {
+      font-weight: 700;
+    }
+
+    @media (max-width: 960px) {
+      .timeline-entry.compact-gap,
+      .timeline-entry.medium-gap,
+      .timeline-entry.large-gap,
+      .timeline-entry.xlarge-gap {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <div class="site-shell">
@@ -37,10 +88,10 @@
     <main>
       <section class="section-intro container">
         <div class="section-heading">
-          <h2>The Chronicle</h2>
+          <h2>A Tale on the Sword Coast</h2>
         </div>
 
-        <article class="timeline-content">
+        <article class="timeline-content intro-card">
           <div class="timeline-image">
             <img
               src="assets/img/lostmine.jpg"
@@ -51,18 +102,20 @@
             <p>
               The following details the entire story of <strong>The Lost Mine of Phandelver</strong>
               as scribed by the <strong>High Wizard of Neverwinter</strong>. It consists of three parts,
-              the prologue which the reader must understand as that sets the stage for all the events
-              to come next, the events of the <strong>Lost Mine</strong> in the year <strong>1491 D.R.</strong>
-              (For those unfamiliar, <strong>D.R.</strong> stands for <strong>Dale Reckoning</strong>, the year
-              when the great standing stone was raised by my people, the <strong>Cormanthyr elves</strong>,
+              the prologue which the reader must understand as that sets the stage for all the events to
+              come next, the events of the <strong>Lost Mine</strong> in the year <strong>1491 D.R.</strong>
+              (For those unfamiliar, <strong>D.R.</strong> stands for <strong>Dale Reckoning</strong>, the
+              year when the great standing stone was raised by my people, the <strong>Cormanthyr elves</strong>,
               in the northern <strong>Dalelands</strong>.), as well as an epilogue and an account of the many
-              plots and intrigues to come. Years are mentioned in most of the prologue, and all the names
-              of various characters are taken from historical annexes. The prologue mainly plays out as a
-              set of years and corresponding events, and the epilogue as a brief glimpse of things to come,
-              the main expedition details the adventures of <strong>Rev. Flint Rockseeker</strong>,
-              <strong>Lady Iris Vicaria</strong>, <strong>Magus Quarion And-vang</strong>,
-              <strong>Miss Seraphina Thumbleton</strong> and two warriors simply called
-              <strong>Hammer</strong> and <strong>Robin</strong> that led to the discovery of the Mine.
+              plots and intrigues to come. Years are mentioned in most of the prologue, and all the names of
+              various characters are taken from historical annexes. The prologue mainly plays out as a set of
+              years and corresponding events, and the epilogue as a brief glimpse of things to come, the main
+              expedition details the adventures of <span class="name-highlight">Rev. Flint Rockseeker</span>,
+              <span class="name-highlight">Lady Iris Vicaria</span>,
+              <span class="name-highlight">Magus Quarion And-vang</span>,
+              <span class="name-highlight">Miss Seraphina Thumbleton</span> and two warriors simply called
+              <span class="name-highlight">Hammer</span> and <span class="name-highlight">Robin</span> that
+              led to the discovery of the Mine.
             </p>
           </div>
         </article>
@@ -71,167 +124,476 @@
       <section id="timeline" class="timeline-section">
         <div class="container">
           <div class="section-heading">
-            <h2>Timeline of Events</h2>
-            <p>
-              Replace these entries with the actual milestones of your campaign.
-              Keep only the most important beats so the page remains dramatic,
-              readable, and not overly long.
-            </p>
+            <h2>Part I: Prologue</h2>
           </div>
 
           <div class="timeline">
-            <article class="timeline-entry left">
+            <article class="timeline-entry left compact-gap">
               <div class="timeline-marker">
-                <span>1487 DR</span>
+                <span>637 DR</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
                   <img
-                    src="assets/img/timeline-placeholder.jpg"
-                    alt="Placeholder artwork for timeline event"
+                    src="assets/img/637.png"
+                    alt="Year 637 DR event"
                   />
                 </div>
                 <div class="timeline-text">
-                  <p class="timeline-tag">Prologue</p>
-                  <h3>The First Omen</h3>
+                  <p class="timeline-tag">Year 637 D.R.</p>
+                  <h3>The Vision of Prince Maenoth</h3>
                   <p>
-                    A strange sign appears in the north, drawing attention to an old
-                    place and a buried history. This is where you can summarize the
-                    first event that matters to the wider story.
+                    The story begins in the Kingdom of <strong>Phanorm</strong>, the Empire of Three Crowns.
+                    <strong>Prince Maenoth Kervellen</strong>, an elf of the royal bloodline and a powerful wizard
+                    in his own right, receives a vision from <strong>Oghma</strong> of a great power residing in
+                    the <strong>Sword Mountains</strong>. Following this revelation, the prince departs for the
+                    <strong>Neverwinter Woods</strong> with his protector <strong>Ser Alaric Tressendar</strong>
+                    and a large retainer of farmers, merchants, and workers.
                   </p>
                 </div>
               </div>
             </article>
 
-            <article class="timeline-entry right">
+            <article class="timeline-entry right compact-gap">
               <div class="timeline-marker">
-                <span>1488 DR</span>
+                <span>638 DR</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
                   <img
-                    src="assets/img/timeline-placeholder.jpg"
-                    alt="Placeholder artwork for timeline event"
+                    src="assets/img/638.png"
+                    alt="Year 638 DR event"
                   />
                 </div>
                 <div class="timeline-text">
-                  <p class="timeline-tag">Prologue</p>
-                  <h3>The Gathering of Threads</h3>
+                  <p class="timeline-tag">Year 638 D.R.</p>
+                  <h3>Castle Cragmaw and Phandelver Founded</h3>
                   <p>
-                    Old names, forgotten claims, and fragments of rumor begin to
-                    align. Use this block for a compact lore paragraph that sets up
-                    the central journey.
+                    Prince Maenoth lays the foundation for <strong>Castle Cragmaw</strong>, which in earlier
+                    years had simply been known as <strong>Castle Crags</strong>, along with an altar and shrine
+                    to Oghma within it. The workers raise the seven spires of the castle in the architecture of
+                    Phanorm. Nearby, <strong>Ser Alaric</strong> establishes a farming settlement and names it
+                    <strong>Phandelver</strong>, after his old home and his new purpose.
                   </p>
                 </div>
               </div>
             </article>
 
-            <article class="timeline-entry left">
+            <article class="timeline-entry left medium-gap">
               <div class="timeline-marker">
-                <span>1489 DR</span>
+                <span>640–650 DR</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
                   <img
-                    src="assets/img/timeline-placeholder.jpg"
-                    alt="Placeholder artwork for timeline event"
+                    src="assets/img/640-650.png"
+                    alt="Years 640 to 650 DR event"
                   />
                 </div>
                 <div class="timeline-text">
-                  <p class="timeline-tag">Campaign</p>
-                  <h3>The Road Opens</h3>
+                  <p class="timeline-tag">Years 640–650 D.R.</p>
+                  <h3>A Bustling Settlement Rises</h3>
                   <p>
-                    The adventurers set out. This entry can mark the formal
-                    beginning of the campaign proper: the first road, the first
-                    charge, the first meeting, or the first disaster.
+                    While the castle is being built, the settlement attracts many settlers and grows into a bustling
+                    town. <strong>Ser Alaric</strong> builds his manor atop a hill and takes up the faith of
+                    <strong>Tymora</strong>. Dwarves and gnomes devoted to Tymora and Oghma join the prince’s cause
+                    and aid the search for the lost power nearby. By the end of the decade, the castle stands complete.
                   </p>
                 </div>
               </div>
             </article>
 
-            <article class="timeline-entry right">
+            <article class="timeline-entry right large-gap">
               <div class="timeline-marker">
-                <span>1490 DR</span>
+                <span>650–700 DR</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
                   <img
-                    src="assets/img/timeline-placeholder.jpg"
-                    alt="Placeholder artwork for timeline event"
+                    src="assets/img/650-700.png"
+                    alt="Years 650 to 700 DR event"
                   />
                 </div>
                 <div class="timeline-text">
-                  <p class="timeline-tag">Campaign</p>
-                  <h3>The Hidden Mine Revealed</h3>
+                  <p class="timeline-tag">Years 650–700 D.R.</p>
+                  <h3>The Search in the Sword Mountains</h3>
                   <p>
-                    One of the major discoveries of the story belongs here. Keep this
-                    text focused on a memorable beat rather than a full session recap.
+                    The dwarves, led by the prince, search tirelessly for the lost power of Oghma. They brave the
+                    bitter snow of the Sword Mountains and fend off roving orc bands. Yet darker and more terrible
+                    powers are already watching these efforts from afar.
                   </p>
                 </div>
               </div>
             </article>
 
-            <article class="timeline-entry left">
+            <article class="timeline-entry left medium-gap">
               <div class="timeline-marker">
-                <span>1491 DR</span>
+                <span>700–725 DR</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
                   <img
-                    src="assets/img/timeline-placeholder.jpg"
-                    alt="Placeholder artwork for timeline event"
+                    src="assets/img/700-725.png"
+                    alt="Years 700 to 725 DR event"
                   />
                 </div>
                 <div class="timeline-text">
-                  <p class="timeline-tag">Campaign</p>
-                  <h3>The Great Trial</h3>
+                  <p class="timeline-tag">Years 700–725 D.R.</p>
+                  <h3>Ice Spire Hold and the Hidden Cavern</h3>
                   <p>
-                    A battle, betrayal, sacrifice, or turning point. Put the emotional
-                    center of the campaign here and keep it sharp and evocative.
+                    Dwarven leadership under <strong>Lady Delsandra Amzarr</strong> establishes the fortress of
+                    <strong>Ice Spire Hold</strong>, which becomes the chief dwarven stronghold in the Sword Mountains.
+                    During this period, the dwarves achieve a major breakthrough: they discover a cavern with natural
+                    waves and hot springs, a place where the weave itself seems innately stronger.
                   </p>
                 </div>
               </div>
             </article>
 
-            <article class="timeline-entry right">
+            <article class="timeline-entry right xlarge-gap">
               <div class="timeline-marker">
-                <span>1492 DR</span>
+                <span>730–790 DR</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
                   <img
-                    src="assets/img/timeline-placeholder.jpg"
-                    alt="Placeholder artwork for timeline event"
+                    src="assets/img/730-790.png"
+                    alt="Years 730 to 790 DR event"
                   />
                 </div>
                 <div class="timeline-text">
-                  <p class="timeline-tag">Epilogue</p>
-                  <h3>After the Dust</h3>
+                  <p class="timeline-tag">Years 730–790 D.R.</p>
+                  <h3>Trade, Towns, and the Forge’s Foundations</h3>
                   <p>
-                    The immediate aftermath: what changed, who endured, and what
-                    scars or triumphs remained.
+                    <strong>Prince Maenoth</strong> dies of illness, yet the region prospers as trade along the
+                    <strong>Triboar Trail</strong> expands through Phandelver. Merchant guilds and nearby settlements
+                    arise. <strong>Thundertree</strong> is founded by druids. The noble <strong>Vicaria</strong> family,
+                    owners of precious mines, establishes <strong>Corlinn Hill</strong> at the foot of Mount Hotenow.
+                    The <strong>Rockseeker clan</strong> takes up prospecting. Meanwhile, dwarves excavate the newly
+                    found cavern and gnomish followers of Oghma begin constructing a mechanism that will channel its
+                    power into a <strong>Forge of Spells</strong>.
                   </p>
                 </div>
               </div>
             </article>
 
-            <article class="timeline-entry left">
+            <article class="timeline-entry left medium-gap">
               <div class="timeline-marker">
-                <span>1493 DR</span>
+                <span>811 DR</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
                   <img
-                    src="assets/img/timeline-placeholder.jpg"
-                    alt="Placeholder artwork for timeline event"
+                    src="assets/img/811.png"
+                    alt="Year 811 DR event"
                   />
                 </div>
                 <div class="timeline-text">
-                  <p class="timeline-tag">Things to Come</p>
-                  <h3>The Unfinished Thread</h3>
+                  <p class="timeline-tag">Year 811 D.R.</p>
+                  <h3>The Phandelver Pact</h3>
                   <p>
-                    End with an open road. Tease future adventures, unresolved
-                    threats, or the next chapter of the world.
+                    The <strong>Spell Forge</strong> is completed. After long negotiation, dwarves and gnomes agree to
+                    work together and form the <strong>Phandelver Pact</strong>, an alliance with the nearby settlement
+                    to share the riches of the mine for the peace and prosperity of all, and to honor the legacy of the
+                    late prince and of <strong>Ser Alaric</strong>, whose descendants now rule
+                    <strong>Tressendar Manor</strong> and <strong>Phandalin</strong>.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-entry right compact-gap">
+              <div class="timeline-marker">
+                <span>c. 815 DR</span>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-image">
+                  <img
+                    src="assets/img/815.png"
+                    alt="Circa 815 DR event"
+                  />
+                </div>
+                <div class="timeline-text">
+                  <p class="timeline-tag">Year Circa 815 D.R.</p>
+                  <h3>The Birth of the Black Spider</h3>
+                  <p>
+                    Beneath the <strong>Kryptgaarden Forest</strong>, in lost mines, a dark elf named
+                    <strong>Nezznar</strong> is born. In the years that follow he masters arcane magic and, under the
+                    influence of his matron deity <strong>Lolth</strong>, takes the name
+                    <strong>“The Black Spider.”</strong> In time he too will seek a great magical bounty nearby.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-entry left large-gap">
+              <div class="timeline-marker">
+                <span>c. 890 DR</span>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-image">
+                  <img
+                    src="assets/img/890.png"
+                    alt="Circa 890 DR event"
+                  />
+                </div>
+                <div class="timeline-text">
+                  <p class="timeline-tag">Year Circa 890 D.R.</p>
+                  <h3>Dawnbringer and the Thayan Interest</h3>
+                  <p>
+                    The mine begins to yield great magical wealth. The dwarves establish a temple to
+                    <strong>Dumathoin</strong>, god of mining, within the cave. Human priests of the
+                    <strong>Morninglord</strong> join the forge and offer their smiths in exchange for the creation
+                    of a weapon capable of smiting the undead. Thus begins the forging of the
+                    <strong>Dawnbringer</strong>. Rumors of this weapon reach <strong>Thay</strong>, and
+                    <strong>Szass Tam</strong> assigns the mage <strong>Mormesk</strong> to investigate.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-entry right compact-gap">
+              <div class="timeline-marker">
+                <span>908 DR</span>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-image">
+                  <img
+                    src="assets/img/908.png"
+                    alt="Year 908 DR event"
+                  />
+                </div>
+                <div class="timeline-text">
+                  <p class="timeline-tag">Year 908 D.R.</p>
+                  <h3>Wealth Draws Predators</h3>
+                  <p>
+                    <strong>Ice Spire Hold</strong>, <strong>Thundertree</strong>, and <strong>Phandelver</strong>
+                    begin to accumulate enough wealth to attract dangerous attention. It is no longer only orcs that
+                    watch the region. Dragons, newly active in the locality, begin to set their sights upon it.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-entry left medium-gap">
+              <div class="timeline-marker">
+                <span>926 DR</span>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-image">
+                  <img
+                    src="assets/img/926.png"
+                    alt="Year 926 DR event"
+                  />
+                </div>
+                <div class="timeline-text">
+                  <p class="timeline-tag">Year 926 D.R.</p>
+                  <h3>Talon Given to the Black Hawk</h3>
+                  <p>
+                    <strong>Lady Aldith Tressendar</strong>, an elven descendant of <strong>Lord Alaric</strong>,
+                    assumes leadership of Phandelver. As a gift, the gnomes of the mine present her with the greatsword
+                    <strong>Talon</strong>, a fitting weapon for the knight known as the
+                    <strong>“Black Hawk.”</strong>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-entry right compact-gap">
+              <div class="timeline-marker">
+                <span>938 DR</span>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-image">
+                  <img
+                    src="assets/img/938.png"
+                    alt="Year 938 DR event"
+                  />
+                </div>
+                <div class="timeline-text">
+                  <p class="timeline-tag">Year 938 D.R.</p>
+                  <h3>The Cult Closes In</h3>
+                  <p>
+                    The <strong>Cult of the Dragon</strong> grows interested in the region as dragon activity increases.
+                    The faction that reveres undead dragons aligns with the necromancers of Thay under
+                    <strong>Mormesk</strong>, who silently makes his way toward the cave in search of an opportunity to strike.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-entry left compact-gap">
+              <div class="timeline-marker">
+                <span>939 DR</span>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-image">
+                  <img
+                    src="assets/img/939.png"
+                    alt="Year 939 DR event"
+                  />
+                </div>
+                <div class="timeline-text">
+                  <p class="timeline-tag">Year 939 D.R.</p>
+                  <h3>The Year of Winter’s Wrath</h3>
+                  <p>
+                    Orcs from the <strong>Kryptgaarden Forest</strong>, led by the warlord chieftain
+                    <strong>Kra</strong>, launch an all-out assault on <strong>Ice Spire Hold</strong>, overwhelming
+                    its dwarven defenders. At the height of the battle, the white dragon <strong>Cryovain</strong>
+                    descends upon the defenseless fortress. As dwarves perish and orcs are seized by winter madness,
+                    the horde sweeps onward into the Sword Mountains and next assails the <strong>Phandelver Mine</strong>.
+                    There <strong>Mormesk</strong>, with his Red Wizards and dragon cultists, seizes his chance and strikes.
+                    The resulting bloodbath collapses the cave and the mine is lost. Trapped within are Mormesk,
+                    dwarven and gnomish defenders, and orcish warriors locked in slaughter. The surviving orcs then fall
+                    upon <strong>Phandelver</strong>. <strong>Lady Aldith</strong>, unable to save the town, makes her last
+                    stand at her manor and dies defending the tomb of her parents in the mines beneath it. With her,
+                    <strong>Talon</strong> is lost. The invasion sweeps onward to <strong>Castle Crags</strong>, which is
+                    likewise overrun and later becomes <strong>Cragmaw</strong>. The town is massacred, the mine and its
+                    location are lost to time, and Cryovain earns the title <strong>“Winter’s Wrath.”</strong> The peaks
+                    thereafter are plunged into a cruel and enduring winter.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-entry right xlarge-gap">
+              <div class="timeline-marker">
+                <span>950–1450 DR</span>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-image">
+                  <img
+                    src="assets/img/950-1450.png"
+                    alt="Years 950 to 1450 DR event"
+                  />
+                </div>
+                <div class="timeline-text">
+                  <p class="timeline-tag">Years 950–1450 D.R.</p>
+                  <h3>Five Centuries of Loss and Hidden Schemes</h3>
+                  <p>
+                    The mine remains lost for over five hundred years while <strong>Winter’s Wrath</strong> slumbers.
+                    Orcs occupying Castle Crags rename it <strong>Cragmaw</strong> and establish the
+                    <strong>Cragmaw Tribe</strong>. The <strong>Triboar Trail</strong> lies dormant for centuries.
+                    Deep within the collapsed mine, <strong>Mormesk</strong> attempts to use the Spell Forge to gain
+                    immortality, but his knowledge proves incomplete. Instead of becoming a lich, he is transformed into
+                    a crazed and powerful <strong>Flameskull</strong>. He raises corpses as zombies and wraiths, creating
+                    his own undead host and continuing his cursed work. The weapon he sought, the
+                    <strong>Lightbringer</strong>, remains safely hidden in the <strong>Temple of Dumathoin</strong>,
+                    forever beyond his reach. During this long period, <strong>Nezznar</strong> learns of Mormesk from
+                    old tomes, joins the <strong>Red Wizards</strong>, and becomes increasingly interested in the mines.
+                    In time he bends the <strong>Cragmaw Tribe</strong> to his will. Near the end of this age,
+                    <strong>Elmar Barthen</strong> and <strong>Toblen Stonehill</strong> arrive as prospectors and set up
+                    camp at the ruined site of old Phandelver. Joined later by the corpulent noble
+                    <strong>Harbin Wester</strong>, they establish the town of <strong>Phandalin</strong>. Toblen and Elmar
+                    concern themselves with the <strong>Stonehill Inn</strong> and <strong>Barthen’s Provisions</strong>,
+                    while Harbin styles himself townmaster.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-entry left large-gap">
+              <div class="timeline-marker">
+                <span>1462 DR</span>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-image">
+                  <img
+                    src="assets/img/1462.png"
+                    alt="Year 1462 DR event"
+                  />
+                </div>
+                <div class="timeline-text">
+                  <p class="timeline-tag">Year 1462 D.R.</p>
+                  <h3>The Prophecy Stirs the Dragons</h3>
+                  <p>
+                    The elements begin to rage as <strong>Winter’s Wrath</strong> awakens at
+                    <strong>Ice-Spire Peak</strong>. The <strong>Cult of the Dragon</strong> becomes deeply involved in
+                    the region, believing that the unrest is caused by slumbering dragons answering an ancient prophecy:
+                    <em>“None shall be left save shattered thrones and the dead, Dragons shall rule the world entire”</em>
+                    — or, by another reading, <em>“None shall be left save shattered thrones, and the dead Dragons shall
+                    rule the world entire.”</em> Both factions of the cult move into the area. Dragon activity is reported
+                    in the <strong>Neverwinter Woods</strong>, the <strong>Ice Spire Mountains</strong>, and at the fiery
+                    heart of <strong>Mount Hotenow</strong>. Promising to slay and raise these dragons, <strong>Nezznar</strong>
+                    forms an alliance with the dragon cultists, who agree in turn to help him find and control
+                    <strong>Wave Echo Cave</strong>.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-entry right compact-gap">
+              <div class="timeline-marker">
+                <span>1463 DR</span>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-image">
+                  <img
+                    src="assets/img/1463.png"
+                    alt="Year 1463 DR event"
+                  />
+                </div>
+                <div class="timeline-text">
+                  <p class="timeline-tag">Year 1463 D.R.</p>
+                  <h3>Mount Hotenow Erupts</h3>
+                  <p>
+                    The red dragon beneath <strong>Mount Hotenow</strong> awakens, causing the volcano to erupt.
+                    The disaster destroys the estate of <strong>Corlinn Hill</strong>, forcing the
+                    <strong>Vicaria</strong> family to flee to <strong>Neverwinter</strong>. With dragon cult activity
+                    increasing, more factions are drawn into the region.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-entry left medium-gap">
+              <div class="timeline-marker">
+                <span>1465–1480 DR</span>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-image">
+                  <img
+                    src="assets/img/1465-1480.png"
+                    alt="Years 1465 to 1480 DR event"
+                  />
+                </div>
+                <div class="timeline-text">
+                  <p class="timeline-tag">Years 1465–1480 D.R.</p>
+                  <h3>Phandalin’s Factions Take Shape</h3>
+                  <p>
+                    The <strong>Order of the Gauntlet</strong> is mobilized, and <strong>Daran Edermath</strong>,
+                    a paladin of Bahamut, comes to Phandalin under the guise of a retired knight and farmer.
+                    <strong>Linene Graywind</strong> establishes the <strong>Lionshield Coster</strong>. As Phandalin
+                    grows, its residents uncover the shrine to <strong>Tymora</strong> built by
+                    <strong>Ser Alaric Tressendar</strong>. The shrine appears in a vision to
+                    <strong>Sister Garaele</strong>, a Harper and devotee of Tymora, who travels to Phandalin, forms
+                    her own network, and reconsecrates the shrine. A gang of humans and halflings emerges in the town
+                    as the <strong>Redbrands</strong>. In response, <strong>Halia Thornton</strong> of the
+                    <strong>Zhentarim</strong> establishes the <strong>Miner’s Exchange</strong> to contest influence.
+                    Far to the north, the druid <strong>Reidoth</strong> leaves <strong>Thundertree</strong> to wander
+                    the region and befriends the farmer <strong>Qelline Alderleaf</strong> while staying for a time in
+                    Phandalin.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-entry right compact-gap">
+              <div class="timeline-marker">
+                <span>1482 DR</span>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-image">
+                  <img
+                    src="assets/img/1482.png"
+                    alt="Year 1482 DR event"
+                  />
+                </div>
+                <div class="timeline-text">
+                  <p class="timeline-tag">Year 1482 D.R.</p>
+                  <h3>To Be Continued</h3>
+                  <p>
+                    This year stands ready for the next part of the prologue.
                   </p>
                 </div>
               </div>
@@ -269,4 +631,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-```
