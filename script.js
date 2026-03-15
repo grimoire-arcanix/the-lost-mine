@@ -1,5 +1,5 @@
 const animatedElements = document.querySelectorAll(
-  ".era-card, .link-card, .timeline-entry, .profile-card, .gallery-card, .lore-block"
+  ".era-card, .link-card, .timeline-entry, .profile-card, .gallery-card"
 );
 
 animatedElements.forEach((el) => el.classList.add("fade-in"));
