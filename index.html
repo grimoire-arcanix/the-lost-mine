@@ -62,6 +62,11 @@
       margin-bottom: 8rem;
     }
 
+    .timeline-entry.campaign-gap {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+    }
+
     .name-highlight {
       font-weight: 700;
     }
@@ -89,28 +94,32 @@
       align-self: start;
       position: relative;
       z-index: 4;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 18px;
     }
 
-    .timeline-entry.left .timeline-marker {
-      justify-content: flex-end;
-      transform: translate(-28px, 18px);
-    }
-
-    .timeline-entry.right .timeline-marker {
-      justify-content: flex-start;
-      transform: translate(28px, 18px);
-    }
-
-    .timeline-entry.left .timeline-marker span,
-    .timeline-entry.right .timeline-marker span {
+    .timeline-marker span {
       box-shadow: 0 10px 24px rgba(20, 13, 6, 0.18);
+    }
+
+    .section-break {
+      text-align: center;
+      max-width: 900px;
+      margin: 5rem auto 2.5rem;
+    }
+
+    .section-break p {
+      margin: 0.5rem 0 0;
     }
 
     @media (max-width: 960px) {
       .timeline-entry.compact-gap,
       .timeline-entry.medium-gap,
       .timeline-entry.large-gap,
-      .timeline-entry.xlarge-gap {
+      .timeline-entry.xlarge-gap,
+      .timeline-entry.campaign-gap {
         margin-top: 2.5rem;
         margin-bottom: 2.5rem;
       }
@@ -124,10 +133,12 @@
         min-height: 260px;
       }
 
-      .timeline-entry.left .timeline-marker,
-      .timeline-entry.right .timeline-marker {
-        justify-content: center;
-        transform: none;
+      .timeline-marker {
+        padding-top: 0;
+      }
+
+      .section-break {
+        margin-top: 3rem;
       }
     }
   </style>
@@ -198,10 +209,7 @@
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img
-                    src="assets/img/637.png"
-                    alt="Year 637 DR event"
-                  />
+                  <img src="assets/img/637.png" alt="Year 637 DR event" />
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Year 637 D.R.</p>
@@ -224,10 +232,7 @@
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img
-                    src="assets/img/638.png"
-                    alt="Year 638 DR event"
-                  />
+                  <img src="assets/img/638.png" alt="Year 638 DR event" />
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Year 638 D.R.</p>
@@ -249,10 +254,7 @@
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img
-                    src="assets/img/640-650.png"
-                    alt="Years 640 to 650 DR event"
-                  />
+                  <img src="assets/img/640-650.png" alt="Years 640 to 650 DR event" />
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Years 640–650 D.R.</p>
@@ -273,10 +275,7 @@
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img
-                    src="assets/img/650-700.png"
-                    alt="Years 650 to 700 DR event"
-                  />
+                  <img src="assets/img/650-700.png" alt="Years 650 to 700 DR event" />
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Years 650–700 D.R.</p>
@@ -296,10 +295,7 @@
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img
-                    src="assets/img/700-725.png"
-                    alt="Years 700 to 725 DR event"
-                  />
+                  <img src="assets/img/700-725.png" alt="Years 700 to 725 DR event" />
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Years 700–725 D.R.</p>
@@ -320,10 +316,7 @@
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img
-                    src="assets/img/730-790.png"
-                    alt="Years 730 to 790 DR event"
-                  />
+                  <img src="assets/img/730-790.png" alt="Years 730 to 790 DR event" />
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Years 730–790 D.R.</p>
@@ -347,10 +340,7 @@
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img
-                    src="assets/img/811.png"
-                    alt="Year 811 DR event"
-                  />
+                  <img src="assets/img/811.png" alt="Year 811 DR event" />
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Year 811 D.R.</p>
@@ -372,10 +362,7 @@
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img
-                    src="assets/img/815.png"
-                    alt="Circa 815 DR event"
-                  />
+                  <img src="assets/img/815.png" alt="Circa 815 DR event" />
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Year Circa 815 D.R.</p>
@@ -396,10 +383,7 @@
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img
-                    src="assets/img/890.png"
-                    alt="Circa 890 DR event"
-                  />
+                  <img src="assets/img/890.png" alt="Circa 890 DR event" />
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Year Circa 890 D.R.</p>
@@ -422,10 +406,7 @@
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img
-                    src="assets/img/908.png"
-                    alt="Year 908 DR event"
-                  />
+                  <img src="assets/img/908.png" alt="Year 908 DR event" />
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Year 908 D.R.</p>
@@ -445,10 +426,7 @@
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img
-                    src="assets/img/926.png"
-                    alt="Year 926 DR event"
-                  />
+                  <img src="assets/img/926.png" alt="Year 926 DR event" />
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Year 926 D.R.</p>
@@ -469,10 +447,7 @@
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img
-                    src="assets/img/938.png"
-                    alt="Year 938 DR event"
-                  />
+                  <img src="assets/img/938.png" alt="Year 938 DR event" />
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Year 938 D.R.</p>
@@ -492,10 +467,7 @@
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img
-                    src="assets/img/939.png"
-                    alt="Year 939 DR event"
-                  />
+                  <img src="assets/img/939.png" alt="Year 939 DR event" />
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Year 939 D.R.</p>
@@ -526,10 +498,7 @@
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img
-                    src="assets/img/950-1450.png"
-                    alt="Years 950 to 1450 DR event"
-                  />
+                  <img src="assets/img/950-1450.png" alt="Years 950 to 1450 DR event" />
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Years 950–1450 D.R.</p>
@@ -562,10 +531,7 @@
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img
-                    src="assets/img/1462.png"
-                    alt="Year 1462 DR event"
-                  />
+                  <img src="assets/img/1462.png" alt="Year 1462 DR event" />
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Year 1462 D.R.</p>
@@ -592,10 +558,7 @@
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img
-                    src="assets/img/1463.png"
-                    alt="Year 1463 DR event"
-                  />
+                  <img src="assets/img/1463.png" alt="Year 1463 DR event" />
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Year 1463 D.R.</p>
@@ -616,10 +579,7 @@
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img
-                    src="assets/img/1465-1480.png"
-                    alt="Years 1465 to 1480 DR event"
-                  />
+                  <img src="assets/img/1465-1480.png" alt="Years 1465 to 1480 DR event" />
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Years 1465–1480 D.R.</p>
@@ -648,16 +608,208 @@
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img
-                    src="assets/img/1482.png"
-                    alt="Year 1482 DR event"
-                  />
+                  <img src="assets/img/1482.png" alt="Year 1482 DR event" />
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Year 1482 D.R.</p>
-                  <h3>To Be Continued</h3>
+                  <h3>Venomfang Falls Upon Thundertree</h3>
                   <p>
-                    This year stands ready for the next part of the prologue.
+                    A dragon by the name of <strong>Venomfang</strong> attacks the settlement of
+                    <strong>Thundertree</strong> and massacres the elves living there. The warrior
+                    <strong>Robin</strong> loses his family and is forced to flee to
+                    <strong>Neverwinter</strong> in search of shelter.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-entry left compact-gap">
+              <div class="timeline-marker">
+                <span>1485 DR</span>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-image">
+                  <img src="assets/img/1485.png" alt="Year 1485 DR event" />
+                </div>
+                <div class="timeline-text">
+                  <p class="timeline-tag">Year 1485 D.R.</p>
+                  <h3>The Cragmaw Threat Grows</h3>
+                  <p>
+                    Orc activity increases and <strong>King Grol’s</strong> forces begin to multiply as
+                    <strong>Nezznar the Black Spider</strong> draws ever nearer to <strong>Wave Echo Cave</strong>.
+                    Nezznar notices the <strong>Cragmaw tribe</strong> and comes to see them as powerful allies
+                    as he begins forging dubious bargains. <strong>Hammer</strong> is divorced and finds work at
+                    <strong>Cragmaw Castle</strong>. He later partners with the <strong>Red Wizards</strong> and
+                    sets up camp at a ruin known as the <strong>Old Owl Well</strong>.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-entry right compact-gap">
+              <div class="timeline-marker">
+                <span>1486 DR</span>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-image">
+                  <img src="assets/img/1486.png" alt="Year 1486 DR event" />
+                </div>
+                <div class="timeline-text">
+                  <p class="timeline-tag">Year 1486 D.R.</p>
+                  <h3>Lady Hilda Becomes the Glass Staff</h3>
+                  <p>
+                    <strong>Lady Hale Hilda</strong> arrives in <strong>Phandalin</strong> with a noble purpose,
+                    but is soon lured by the <strong>Black Spider</strong> and takes up the mantle of the
+                    <strong>Glass Staff</strong>. Nezznar promises her magical treasures from the
+                    <strong>Lost Mine</strong> once it is found, and in return she establishes a faction meant to
+                    disrupt the activities of the <strong>Order of the Gauntlet</strong> and the
+                    <strong>Lords’ Alliance</strong> in Phandalin. She takes up residence in
+                    <strong>Tressendar Manor</strong> and founds the <strong>Redbrands</strong>.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-entry left compact-gap">
+              <div class="timeline-marker">
+                <span>1487 DR</span>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-image">
+                  <img src="assets/img/1487.png" alt="Year 1487 DR event" />
+                </div>
+                <div class="timeline-text">
+                  <p class="timeline-tag">Year 1487 D.R.</p>
+                  <h3>Seraphina Comes to Phandalin</h3>
+                  <p>
+                    <strong>Seraphina Thumbleton</strong> arrives in <strong>Phandalin</strong> and takes up work
+                    with the <strong>Redbrands</strong>, where she forms a friendship with
+                    <strong>Uma Thurmanbloop</strong>.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-entry right medium-gap">
+              <div class="timeline-marker">
+                <span>1489 DR</span>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-image">
+                  <img src="assets/img/1489.png" alt="Year 1489 DR event" />
+                </div>
+                <div class="timeline-text">
+                  <p class="timeline-tag">Year 1489 D.R.</p>
+                  <h3>The Rockseekers Begin the Expedition</h3>
+                  <p>
+                    The <strong>Rockseeker brothers</strong> begin their expedition into the
+                    <strong>Sword Mountains</strong>, guided by a vision granted through
+                    <strong>Sister Garaele</strong>. During this same period, <strong>Seraphina</strong> is
+                    betrayed by <strong>Uma</strong> and leaves <strong>Phandalin</strong>.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-entry left campaign-gap">
+              <div class="timeline-marker">
+                <span>1491 DR</span>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-image">
+                  <img src="assets/img/1491.png" alt="Year 1491 DR event" />
+                </div>
+                <div class="timeline-text">
+                  <p class="timeline-tag">Year 1491 D.R.</p>
+                  <h3>The Mine is Found and the Trap is Set</h3>
+                  <p>
+                    The <strong>Rockseekers</strong> finally find the <strong>Lost Mine of Phandelver</strong>,
+                    and <strong>Gundren</strong> departs for <strong>Neverwinter</strong> to hire adventurers.
+                    Before leaving, he tells his trusted allies in <strong>Phandalin</strong> of the discovery
+                    and commissions ledgers from <strong>Elmar Barthen</strong>. Unbeknownst to him,
+                    <strong>Lady Hilda</strong> is already in league with the <strong>Black Spider</strong>, and
+                    an ambush is prepared for Gundren, his brothers, and the prospective heroes soon to be drawn
+                    into the mission.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <div class="section-break">
+              <h2>Part II: The Lost Mine, 1491 D.R.</h2>
+              <p>
+                Here begins the campaign proper: the expedition, the ambush, the journey into Phandalin,
+                and the discovery of the threads binding the Lost Mine to every power along the Sword Coast.
+              </p>
+            </div>
+
+            <article class="timeline-entry right campaign-gap">
+              <div class="timeline-marker">
+                <span>1491 DR</span>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-image">
+                  <img src="assets/img/campaign1.png" alt="Campaign event one in 1491 DR" />
+                </div>
+                <div class="timeline-text">
+                  <p class="timeline-tag">1491 D.R. — Campaign I</p>
+                  <h3>Campaign Event I</h3>
+                  <p>
+                    Placeholder for the opening campaign chapter.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-entry left campaign-gap">
+              <div class="timeline-marker">
+                <span>1491 DR</span>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-image">
+                  <img src="assets/img/campaign2.png" alt="Campaign event two in 1491 DR" />
+                </div>
+                <div class="timeline-text">
+                  <p class="timeline-tag">1491 D.R. — Campaign II</p>
+                  <h3>Campaign Event II</h3>
+                  <p>
+                    Placeholder for the second campaign chapter.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-entry right campaign-gap">
+              <div class="timeline-marker">
+                <span>1491 DR</span>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-image">
+                  <img src="assets/img/campaign3.png" alt="Campaign event three in 1491 DR" />
+                </div>
+                <div class="timeline-text">
+                  <p class="timeline-tag">1491 D.R. — Campaign III</p>
+                  <h3>Campaign Event III</h3>
+                  <p>
+                    Placeholder for the third campaign chapter.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-entry left campaign-gap">
+              <div class="timeline-marker">
+                <span>1491 DR</span>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-image">
+                  <img src="assets/img/campaign4.png" alt="Campaign event four in 1491 DR" />
+                </div>
+                <div class="timeline-text">
+                  <p class="timeline-tag">1491 D.R. — Campaign IV</p>
+                  <h3>Campaign Event IV</h3>
+                  <p>
+                    Placeholder for the fourth campaign chapter.
                   </p>
                 </div>
               </div>
