@@ -38,24 +38,28 @@
       margin: 0;
     }
 
+    .timeline-section .container {
+      width: min(100% - 1rem, 1240px);
+    }
+
     .timeline-entry.compact-gap {
-      margin-top: 2rem;
-      margin-bottom: 2rem;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
     }
 
     .timeline-entry.medium-gap {
-      margin-top: 3.5rem;
-      margin-bottom: 3.5rem;
+      margin-top: 4.5rem;
+      margin-bottom: 4.5rem;
     }
 
     .timeline-entry.large-gap {
-      margin-top: 5rem;
-      margin-bottom: 5rem;
+      margin-top: 6rem;
+      margin-bottom: 6rem;
     }
 
     .timeline-entry.xlarge-gap {
-      margin-top: 6.75rem;
-      margin-bottom: 6.75rem;
+      margin-top: 8rem;
+      margin-bottom: 8rem;
     }
 
     .name-highlight {
@@ -63,15 +67,43 @@
     }
 
     .timeline-entry {
-      align-items: center;
+      align-items: start;
+      position: relative;
     }
 
     .timeline-content {
-      align-self: center;
+      align-self: start;
+      padding: 1.5rem;
+      grid-template-columns: 1.15fr 1.35fr;
+      gap: 1.25rem;
+      min-height: 360px;
+    }
+
+    .timeline-image img {
+      min-height: 310px;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
     }
 
     .timeline-marker {
-      align-self: center;
+      align-self: start;
+      position: relative;
+      z-index: 4;
+    }
+
+    .timeline-entry.left .timeline-marker {
+      justify-content: flex-end;
+      transform: translate(-28px, 18px);
+    }
+
+    .timeline-entry.right .timeline-marker {
+      justify-content: flex-start;
+      transform: translate(28px, 18px);
+    }
+
+    .timeline-entry.left .timeline-marker span,
+    .timeline-entry.right .timeline-marker span {
+      box-shadow: 0 10px 24px rgba(20, 13, 6, 0.18);
     }
 
     @media (max-width: 960px) {
@@ -79,8 +111,23 @@
       .timeline-entry.medium-gap,
       .timeline-entry.large-gap,
       .timeline-entry.xlarge-gap {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+      }
+
+      .timeline-content {
+        min-height: unset;
+        grid-template-columns: 1fr;
+      }
+
+      .timeline-image img {
+        min-height: 260px;
+      }
+
+      .timeline-entry.left .timeline-marker,
+      .timeline-entry.right .timeline-marker {
+        justify-content: center;
+        transform: none;
       }
     }
   </style>
