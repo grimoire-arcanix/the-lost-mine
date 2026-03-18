@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Lost Mine | Seraphina Thumbleton</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Uncial+Antiqua&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body { background: linear-gradient(rgba(248,242,226,0.78), rgba(248,242,226,0.78)), url("assets/img/seraphinabg.png"); background-size: cover; background-position: center; background-attachment: fixed; }
+    .profile-wrap { width: min(100% - 2rem, 1100px); margin: 0 auto; padding: 2rem 0 3rem; }
+    .profile-card { display: grid; grid-template-columns: 300px 1fr; gap: 1.5rem; background: rgba(255,248,236,0.92); border: 1px solid rgba(30,20,8,0.2); border-radius: 24px; padding: 1.5rem; box-shadow: 0 14px 34px rgba(20,13,6,0.16); }
+    .profile-sidebar img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 18px; border: 1px solid rgba(30,20,8,0.2); }
+    .profile-meta { margin-top: 1rem; background: rgba(255,255,255,0.42); border-radius: 16px; padding: 0.9rem 1rem; }
+    .profile-meta p { margin: 0.35rem 0; }
+    .profile-content h1 { margin-bottom: 0.35rem; }
+    .profile-subtitle { margin-top: 0; color: #24180b; }
+    .profile-story { margin-top: 1.2rem; font-size: 1.06rem; line-height: 1.72; }
+    .profile-story p { margin: 0 0 1rem; }
+    .back-link { text-align: center; margin-top: 1.25rem; }
+    @media (max-width: 800px) { .profile-card { grid-template-columns: 1fr; } body { background-attachment: scroll; } }
+  </style>
+</head>
+<body>
+  <header class="site-header compact-header">
+    <div class="container">
+      <h1>Seraphina Thumbleton</h1>
+      <p class="subtitle">Halfling Rogue</p>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Chronicle</a>
+        <a href="heroes.html" class="active">Heroes</a>
+        <a href="gallery.html">Gallery</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="profile-wrap">
+    <article class="profile-card">
+      <aside class="profile-sidebar">
+        <img src="assets/img/seraphina.png" alt="Seraphina Thumbleton" />
+        <div class="profile-meta">
+          <p><strong>Lineage:</strong> Halfling</p>
+          <p><strong>Class:</strong> Rogue</p>
+          <p><strong>Outlook:</strong> Neutral</p>
+          <p><strong>Former Ties:</strong> The Redbrands</p>
+          <p><strong>Later Allegiance:</strong> Zhentarim</p>
+        </div>
+      </aside>
+
+      <section class="profile-content">
+        <p class="eyebrow">Character Chronicle</p>
+        <h1>Seraphina Thumbleton</h1>
+        <p class="profile-subtitle">The survivor who turned betrayal into influence</p>
+
+        <div class="profile-story">
+          <p>
+            Seraphina came to <strong>Phandalin</strong> lured by rumors of quick wealth and careless settlers. She did not arrive seeking honest labor. Instead, she slipped into the orbit of the <strong>Redbrands</strong>, where burglary, fencing, and intimidation paid in coin and secrecy. She lived by instinct, quick hands, and the sort of luck that smiles only briefly.
+          </p>
+          <p>
+            That life changed when someone inside the gang betrayed her. Marked for death and nearly killed under the orders of <strong>Glasstaff</strong>, Seraphina fled with little but her tools and Tymora’s favor. She returned not because she believed in redemption, but because unfinished business has a way of calling the wounded home. During the campaign, she outwitted goblins, earned the dagger of <strong>Klarg</strong>, exposed <strong>Lady Hilda</strong>, and survived the layered deceptions surrounding the <strong>Black Spider</strong>. Again and again, her instincts kept the party alive in places where blunt strength alone would have failed.
+          </p>
+          <p>
+            In the aftermath, <strong>Halia Thornton</strong> saw clearly what Seraphina had become: not merely a survivor, but a woman capable of shaping the hidden currents of a region. Seraphina entered the <strong>Zhentarim</strong>, rose through the <strong>Black Network</strong>, and took control of the smuggling routes once left behind by Hale Hilda. Where once she survived on the edges of someone else’s scheme, she now moved in the quiet center of power, dealing in shadows with a confidence hard-earned and never given freely.
+          </p>
+        </div>
+      </section>
+    </article>
+
+    <div class="back-link">
+      <a class="button" href="heroes.html">Back to Heroes</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>The Lost Mine c 2026 Bhargav Dave</p>
+    </div>
+  </footer>
+</body>
+</html>

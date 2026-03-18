@@ -23,10 +23,6 @@
       margin: 0 auto 2.5rem;
     }
 
-    .gallery-page-lead p {
-      margin: 0;
-    }
-
     .album-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -58,13 +54,6 @@
       display: block;
     }
 
-    .album-caption {
-      padding: 0.7rem 0.9rem 0.8rem;
-      text-align: center;
-      color: #24180b;
-      font-size: 0.98rem;
-    }
-
     .album-empty {
       max-width: 760px;
       margin: 0 auto;
@@ -74,13 +63,6 @@
       border-radius: 18px;
       box-shadow: 0 10px 24px rgba(20, 13, 6, 0.12);
       text-align: center;
-    }
-
-    .album-note {
-      max-width: 900px;
-      margin: 2rem auto 0;
-      text-align: center;
-      font-size: 0.98rem;
     }
 
     .lightbox {
@@ -116,13 +98,6 @@
       border: 2px solid rgba(248, 242, 226, 0.18);
       object-fit: contain;
       background: rgba(255, 248, 236, 0.04);
-    }
-
-    .lightbox-caption {
-      color: #f7f0df;
-      text-align: center;
-      font-size: 1.05rem;
-      max-width: 80ch;
     }
 
     .lightbox-close,
@@ -164,13 +139,8 @@
       line-height: 1;
     }
 
-    .lightbox-prev {
-      left: -4.2rem;
-    }
-
-    .lightbox-next {
-      right: -4.2rem;
-    }
+    .lightbox-prev { left: -4.2rem; }
+    .lightbox-next { right: -4.2rem; }
 
     @media (max-width: 900px) {
       .lightbox-prev,
@@ -179,15 +149,8 @@
         bottom: -3.5rem;
         transform: none;
       }
-
-      .lightbox-prev {
-        left: calc(50% - 60px);
-      }
-
-      .lightbox-next {
-        right: calc(50% - 60px);
-      }
-
+      .lightbox-prev { left: calc(50% - 60px); }
+      .lightbox-next { right: calc(50% - 60px); }
       .lightbox-close {
         top: -0.75rem;
         right: 0;
@@ -198,15 +161,12 @@
       .album-grid {
         grid-template-columns: 1fr;
       }
-
       .album-card img {
         min-height: 220px;
       }
-
       .lightbox {
         padding: 1rem;
       }
-
       .lightbox-image {
         max-height: 72vh;
       }
@@ -219,7 +179,6 @@
       <div class="container">
         <p class="eyebrow">The Codex</p>
         <h1>Gallery</h1>
-        <p class="subtitle">Photo Archive</p>
 
         <nav class="main-nav" aria-label="Main navigation">
           <a href="index.html">Chronicle</a>
@@ -232,9 +191,6 @@
     <main class="container page-content">
       <section class="gallery-page-lead">
         <h2>The Visual Archive</h2>
-        <p>
-          An album of maps, portraits, relics, scenes, and memories from the campaign.
-        </p>
       </section>
 
       <section id="album" class="album-grid" aria-label="Campaign gallery"></section>
@@ -243,13 +199,6 @@
         <p>
           No gallery images have been added yet. Put images inside
           <strong>assets/img/gallery/</strong>, then run <strong>build_gallery.py</strong>.
-        </p>
-      </div>
-
-      <div class="album-note">
-        <p>
-          Add files to <strong>assets/img/gallery/</strong> and run the Python script in the repo root
-          to refresh this page automatically.
         </p>
       </div>
     </main>
@@ -267,7 +216,6 @@
       <button id="lightbox-prev" class="lightbox-prev" aria-label="Previous image">&#10094;</button>
       <img id="lightbox-image" class="lightbox-image" src="" alt="" />
       <button id="lightbox-next" class="lightbox-next" aria-label="Next image">&#10095;</button>
-      <div id="lightbox-caption" class="lightbox-caption"></div>
     </div>
   </div>
 
@@ -278,8 +226,6 @@
       "IMG-20260111-WA0000.jpeg",
       "IMG-20260119-WA0008.jpg",
       "IMG-20260119-WA0011.jpg",
-      "IMG-20260119-WA0015.jpg",
-      "IMG-20260119-WA0017.jpg",
       "IMG-20260119-WA0036.jpg",
       "IMG-20260119-WA0039.jpg",
       "IMG-20260119-WA0042.jpg"
@@ -291,7 +237,6 @@
 
     const lightbox = document.getElementById("lightbox");
     const lightboxImage = document.getElementById("lightbox-image");
-    const lightboxCaption = document.getElementById("lightbox-caption");
     const lightboxClose = document.getElementById("lightbox-close");
     const lightboxPrev = document.getElementById("lightbox-prev");
     const lightboxNext = document.getElementById("lightbox-next");
@@ -312,7 +257,6 @@
       const file = galleryImages[currentIndex];
       lightboxImage.src = galleryFolder + file;
       lightboxImage.alt = prettifyFilename(file);
-      lightboxCaption.textContent = prettifyFilename(file);
       lightbox.classList.add("open");
       lightbox.setAttribute("aria-hidden", "false");
       document.body.style.overflow = "hidden";
@@ -354,12 +298,7 @@
         img.src = galleryFolder + file;
         img.alt = prettifyFilename(file);
 
-        const caption = document.createElement("figcaption");
-        caption.className = "album-caption";
-        caption.textContent = prettifyFilename(file);
-
         figure.appendChild(img);
-        figure.appendChild(caption);
         album.appendChild(figure);
 
         figure.addEventListener("click", () => openLightbox(index));

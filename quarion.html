@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Lost Mine | Magus Quarion Andvang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Uncial+Antiqua&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body { background: linear-gradient(rgba(248,242,226,0.78), rgba(248,242,226,0.78)), url("assets/img/quarionbg.png"); background-size: cover; background-position: center; background-attachment: fixed; }
+    .profile-wrap { width: min(100% - 2rem, 1100px); margin: 0 auto; padding: 2rem 0 3rem; }
+    .profile-card { display: grid; grid-template-columns: 300px 1fr; gap: 1.5rem; background: rgba(255,248,236,0.92); border: 1px solid rgba(30,20,8,0.2); border-radius: 24px; padding: 1.5rem; box-shadow: 0 14px 34px rgba(20,13,6,0.16); }
+    .profile-sidebar img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 18px; border: 1px solid rgba(30,20,8,0.2); }
+    .profile-meta { margin-top: 1rem; background: rgba(255,255,255,0.42); border-radius: 16px; padding: 0.9rem 1rem; }
+    .profile-meta p { margin: 0.35rem 0; }
+    .profile-content h1 { margin-bottom: 0.35rem; }
+    .profile-subtitle { margin-top: 0; color: #24180b; }
+    .profile-story { margin-top: 1.2rem; font-size: 1.06rem; line-height: 1.72; }
+    .profile-story p { margin: 0 0 1rem; }
+    .back-link { text-align: center; margin-top: 1.25rem; }
+    @media (max-width: 800px) { .profile-card { grid-template-columns: 1fr; } body { background-attachment: scroll; } }
+  </style>
+</head>
+<body>
+  <header class="site-header compact-header">
+    <div class="container">
+      <h1>Magus Quarion Andvang</h1>
+      <p class="subtitle">High Elf Wizard</p>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Chronicle</a>
+        <a href="heroes.html" class="active">Heroes</a>
+        <a href="gallery.html">Gallery</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="profile-wrap">
+    <article class="profile-card">
+      <aside class="profile-sidebar">
+        <img src="assets/img/quarion.png" alt="Magus Quarion Andvang" />
+        <div class="profile-meta">
+          <p><strong>Lineage:</strong> High Elf</p>
+          <p><strong>Class:</strong> Wizard</p>
+          <p><strong>Outlook:</strong> Chaotic Good</p>
+          <p><strong>Patron:</strong> Oghma</p>
+          <p><strong>Charge:</strong> Restore sacred knowledge</p>
+        </div>
+      </aside>
+
+      <section class="profile-content">
+        <p class="eyebrow">Character Chronicle</p>
+        <h1>Magus Quarion Andvang</h1>
+        <p class="profile-subtitle">The scholar of Oghma who turned ruined stone back into sanctuary</p>
+
+        <div class="profile-story">
+          <p>
+            Quarion devoted his life to <strong>Oghma</strong>, god of knowledge, and spent long years studying the lore of the multiverse. He believed that learning should be shared, cultivated, and defended, not buried beneath desecrated altars or hoarded by the cruel. His faith was not passive scholarship, but living service to memory, meaning, and the sacred work of restoration.
+          </p>
+          <p>
+            Through visions received in trance and devotion, Quarion learned of a defiled shrine in the goblin-held ruin now called <strong>Cragmaw Castle</strong>. Once sacred to Oghma, it had been profaned and forgotten. That offense drew him toward <strong>Phandalin</strong>, where the fate of the shrine became entangled with the wider struggle around the <strong>Lost Mine of Phandelver</strong>. Though his path crossed the company unevenly, Quarion’s purpose never dimmed. He pursued truth in dangerous places and bore himself as a servant of knowledge even where ignorance ruled by violence.
+          </p>
+          <p>
+            After the party’s victory, Quarion was rescued from <strong>Cragmaw Castle</strong> by the combined strength of the <strong>Lords’ Alliance</strong> and the <strong>Order of the Gauntlet</strong>. With <strong>King Grol</strong> defeated, the long-lost shrine to Oghma was uncovered within the old stronghold. Quarion reconsecrated it, and <strong>Castle Crags</strong> — no longer merely Cragmaw — became once more a place of refuge, passage, and learning for those endangered by the <strong>Neverwinter Woods</strong>. In him, study had finally become sanctuary.
+          </p>
+        </div>
+      </section>
+    </article>
+
+    <div class="back-link">
+      <a class="button" href="heroes.html">Back to Heroes</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>The Lost Mine c 2026 Bhargav Dave</p>
+    </div>
+  </footer>
+</body>
+</html>

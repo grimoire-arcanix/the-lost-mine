@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Lost Mine | Rev. Flint Rockseeker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Uncial+Antiqua&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background:
+        linear-gradient(rgba(248, 242, 226, 0.78), rgba(248, 242, 226, 0.78)),
+        url("assets/img/flintbg.png");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    .profile-wrap { width: min(100% - 2rem, 1100px); margin: 0 auto; padding: 2rem 0 3rem; }
+    .profile-card { display: grid; grid-template-columns: 300px 1fr; gap: 1.5rem; background: rgba(255, 248, 236, 0.92); border: 1px solid rgba(30, 20, 8, 0.2); border-radius: 24px; padding: 1.5rem; box-shadow: 0 14px 34px rgba(20, 13, 6, 0.16); }
+    .profile-sidebar img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 18px; border: 1px solid rgba(30, 20, 8, 0.2); }
+    .profile-meta { margin-top: 1rem; background: rgba(255,255,255,0.42); border-radius: 16px; padding: 0.9rem 1rem; }
+    .profile-meta p { margin: 0.35rem 0; }
+    .profile-content h1 { margin-bottom: 0.35rem; }
+    .profile-subtitle { margin-top: 0; color: #24180b; }
+    .profile-story { margin-top: 1.2rem; font-size: 1.06rem; line-height: 1.72; }
+    .profile-story p { margin: 0 0 1rem; }
+    .back-link { text-align: center; margin-top: 1.25rem; }
+    @media (max-width: 800px) { .profile-card { grid-template-columns: 1fr; } body { background-attachment: scroll; } }
+  </style>
+</head>
+<body>
+  <header class="site-header compact-header">
+    <div class="container">
+      <h1>Rev. Flint Rockseeker</h1>
+      <p class="subtitle">Dwarf Cleric</p>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Chronicle</a>
+        <a href="heroes.html" class="active">Heroes</a>
+        <a href="gallery.html">Gallery</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="profile-wrap">
+    <article class="profile-card">
+      <aside class="profile-sidebar">
+        <img src="assets/img/flint.png" alt="Rev. Flint Rockseeker" />
+        <div class="profile-meta">
+          <p><strong>Lineage:</strong> Dwarf</p>
+          <p><strong>Class:</strong> Cleric</p>
+          <p><strong>Outlook:</strong> Neutral Good</p>
+          <p><strong>Kin:</strong> Cousin of Gundren, Tharden, and Nundro</p>
+          <p><strong>Relic:</strong> Lightbringer</p>
+        </div>
+      </aside>
+
+      <section class="profile-content">
+        <p class="eyebrow">Character Chronicle</p>
+        <h1>Rev. Flint Rockseeker</h1>
+        <p class="profile-subtitle">The conscience-driven priest who reclaimed the mine of his bloodline</p>
+
+        <div class="profile-story">
+          <p>
+            Flint was trained as a soldier on <strong>Mintarn</strong> and later served in <strong>Neverwinter</strong>, where he grew disillusioned with men who mistook authority for virtue. When conscience placed him at odds with command, he turned instead toward faith. Though still bound by rank and memory to the life he had left behind, he had already begun to understand that true strength was not measured by obedience, but by what one was willing to defend.
+          </p>
+          <p>
+            News of the <strong>Redbrands</strong> in <strong>Phandalin</strong> drew him westward, for in them he recognized the same cruelty he had come to despise elsewhere. He also carried a deeper tie to the land than he first understood, for he was kin to <strong>Gundren, Tharden, and Nundro Rockseeker</strong>. During the campaign, Flint helped break the Redbrand menace, won the blessing of <strong>Daran Edermath</strong>, survived the dangers of <strong>Cragmaw Castle</strong>, and descended into the buried sanctity of <strong>Wave Echo Cave</strong>. There he stood at the heart of the final struggle and claimed <strong>Lightbringer</strong> from the ancient temple below.
+          </p>
+          <p>
+            After the campaign, Flint used Lightbringer to reconsecrate the shrine of <strong>Dumathoin</strong> in the lost mine. Dwarven and gnomish priests entered under his protection, cleansed the tunnels of undead, and brought <strong>Mormesk</strong> to his end. A temple rose within the restored mine, and Flint became its head priest, guiding the Rockseekers toward stewardship, honest trade, and shared prosperity with <strong>Phandalin</strong>. In the end, he did not merely reclaim a mine. He reclaimed a legacy and gave it a soul.
+          </p>
+        </div>
+      </section>
+    </article>
+
+    <div class="back-link">
+      <a class="button" href="heroes.html">Back to Heroes</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>The Lost Mine c 2026 Bhargav Dave</p>
+    </div>
+  </footer>
+</body>
+</html>

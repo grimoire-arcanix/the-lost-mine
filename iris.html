@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Lost Mine | Lady Iris Vicaria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Uncial+Antiqua&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background:
+        linear-gradient(rgba(248, 242, 226, 0.78), rgba(248, 242, 226, 0.78)),
+        url("assets/img/irisbg.png");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    .profile-wrap {
+      width: min(100% - 2rem, 1100px);
+      margin: 0 auto;
+      padding: 2rem 0 3rem;
+    }
+    .profile-card {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 1.5rem;
+      background: rgba(255, 248, 236, 0.92);
+      border: 1px solid rgba(30, 20, 8, 0.2);
+      border-radius: 24px;
+      padding: 1.5rem;
+      box-shadow: 0 14px 34px rgba(20, 13, 6, 0.16);
+    }
+    .profile-sidebar img {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      border-radius: 18px;
+      border: 1px solid rgba(30, 20, 8, 0.2);
+    }
+    .profile-meta {
+      margin-top: 1rem;
+      background: rgba(255,255,255,0.42);
+      border-radius: 16px;
+      padding: 0.9rem 1rem;
+    }
+    .profile-meta p { margin: 0.35rem 0; }
+    .profile-content h1 { margin-bottom: 0.35rem; }
+    .profile-subtitle { margin-top: 0; color: #24180b; }
+    .profile-story {
+      margin-top: 1.2rem;
+      font-size: 1.06rem;
+      line-height: 1.72;
+    }
+    .profile-story p {
+      margin: 0 0 1rem;
+    }
+    .back-link { text-align: center; margin-top: 1.25rem; }
+    @media (max-width: 800px) {
+      .profile-card { grid-template-columns: 1fr; }
+      body { background-attachment: scroll; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header compact-header">
+    <div class="container">
+      <h1>Lady Iris Vicaria</h1>
+      <p class="subtitle">Human Fighter</p>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Chronicle</a>
+        <a href="heroes.html" class="active">Heroes</a>
+        <a href="gallery.html">Gallery</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="profile-wrap">
+    <article class="profile-card">
+      <aside class="profile-sidebar">
+        <img src="assets/img/iris.png" alt="Lady Iris Vicaria" />
+        <div class="profile-meta">
+          <p><strong>Lineage:</strong> Human</p>
+          <p><strong>Class:</strong> Fighter</p>
+          <p><strong>Outlook:</strong> Lawful Neutral</p>
+          <p><strong>Claim:</strong> House Vicaria of Corlinn Hill</p>
+          <p><strong>Legacy:</strong> Tressendar Manor, Phandalin</p>
+        </div>
+      </aside>
+
+      <section class="profile-content">
+        <p class="eyebrow">Character Chronicle</p>
+        <h1>Lady Iris Vicaria</h1>
+        <p class="profile-subtitle">The noble who turned a ruined frontier into a seat of order</p>
+
+        <div class="profile-story">
+          <p>
+            Iris was born to a family that once held wealth, title, and standing in the hills of <strong>Corlinn Hill</strong>, before the eruption of <strong>Mount Hotenow</strong> reduced that inheritance to memory. Raised in comfort rather than splendor, she grew into a woman convinced that nobility meant more than an empty name. Where others saw only a ruined inheritance and a diminished title, Iris saw duty.
+          </p>
+          <p>
+            That sense of duty drew her toward <strong>Phandalin</strong>, a place she believed could be disciplined, restored, and civilized. She did not come west merely to observe events, but to shape them. During the campaign, she endured the ambush on the road, the turmoil of the Redbrands, the intrigues of <strong>Cragmaw Castle</strong>, and the darkness of <strong>Wave Echo Cave</strong>. She stood firm when others faltered, survived a near-fatal struggle against <strong>Lady Hilda</strong>, and proved herself worthy in the sight of <strong>Lady Aldith Tressendar</strong>, who entrusted her with both sword and legacy.
+          </p>
+          <p>
+            In the years that followed, Iris restored <strong>Tressendar Manor</strong> and assumed her place as the noble guardian of <strong>Phandalin</strong>. Under her hand, the <strong>Vicaria</strong> name ceased to be a relic of a lost estate and became something living again, tied not to vanished lands, but to a town with a future worth defending. Through order, resolve, and the burden of inherited honor, Iris became precisely what she had long believed she was meant to be: not the heir to a dead place, but the ruler of one reborn.
+          </p>
+        </div>
+      </section>
+    </article>
+
+    <div class="back-link">
+      <a class="button" href="heroes.html">Back to Heroes</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>The Lost Mine c 2026 Bhargav Dave</p>
+    </div>
+  </footer>
+</body>
+</html>

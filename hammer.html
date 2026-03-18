@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Lost Mine | Hammer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Uncial+Antiqua&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body { background: linear-gradient(rgba(248,242,226,0.78), rgba(248,242,226,0.78)), url("assets/img/hammerbg.png"); background-size: cover; background-position: center; background-attachment: fixed; }
+    .profile-wrap { width: min(100% - 2rem, 1100px); margin: 0 auto; padding: 2rem 0 3rem; }
+    .profile-card { display: grid; grid-template-columns: 300px 1fr; gap: 1.5rem; background: rgba(255,248,236,0.92); border: 1px solid rgba(30,20,8,0.2); border-radius: 24px; padding: 1.5rem; box-shadow: 0 14px 34px rgba(20,13,6,0.16); }
+    .profile-sidebar img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 18px; border: 1px solid rgba(30,20,8,0.2); }
+    .profile-meta { margin-top: 1rem; background: rgba(255,255,255,0.42); border-radius: 16px; padding: 0.9rem 1rem; }
+    .profile-meta p { margin: 0.35rem 0; }
+    .profile-content h1 { margin-bottom: 0.35rem; }
+    .profile-subtitle { margin-top: 0; color: #24180b; }
+    .profile-story { margin-top: 1.2rem; font-size: 1.06rem; line-height: 1.72; }
+    .profile-story p { margin: 0 0 1rem; }
+    .back-link { text-align: center; margin-top: 1.25rem; }
+    @media (max-width: 800px) { .profile-card { grid-template-columns: 1fr; } body { background-attachment: scroll; } }
+  </style>
+</head>
+<body>
+  <header class="site-header compact-header">
+    <div class="container">
+      <h1>Hammer</h1>
+      <p class="subtitle">Half-Orc Barbarian</p>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Chronicle</a>
+        <a href="heroes.html" class="active">Heroes</a>
+        <a href="gallery.html">Gallery</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="profile-wrap">
+    <article class="profile-card">
+      <aside class="profile-sidebar">
+        <img src="assets/img/hammer.png" alt="Hammer" />
+        <div class="profile-meta">
+          <p><strong>Lineage:</strong> Half-Orc</p>
+          <p><strong>Class:</strong> Barbarian</p>
+          <p><strong>Reputation:</strong> Lone warrior</p>
+          <p><strong>Former Master:</strong> King Grol</p>
+          <p><strong>Future:</strong> Uncertain road</p>
+        </div>
+      </aside>
+
+      <section class="profile-content">
+        <p class="eyebrow">Character Chronicle</p>
+        <h1>Hammer</h1>
+        <p class="profile-subtitle">The wandering blade who could never stay bound for long</p>
+
+        <div class="profile-story">
+          <p>
+            Not much is firmly known about Hammer’s early life, save that he wandered the <strong>Forgotten Realms</strong> with a growing reputation and a taste for danger. He once knew a better love in <strong>Waterdeep</strong>, but that life ended in loss, and from then on restlessness became his constant companion. He moved from place to place not because he lacked strength, but because stillness bored him and nothing rooted him for long.
+          </p>
+          <p>
+            Adventure, danger, and the faint hope of finding something worth staying for eventually drew him into the service of <strong>King Grol</strong>, though obedience was never a thing he wore naturally. By the time the party’s path crossed his, Hammer had already grown tired of another man’s rule. When the choice finally came, he abandoned the stale safety of Cragmaw and cast his lot in with the company instead, lending his strength to the long road toward <strong>Wave Echo Cave</strong>.
+          </p>
+          <p>
+            In the aftermath of the campaign, Hammer became an unexpected figure of reverence among goblins and orcs alike. With <strong>Klarg</strong> and <strong>Grol</strong> gone, many looked to him in the power vacuum that followed. Yet no one who knows him truly believes he will remain a warlord forever. Hammer is a creature of motion, and sooner or later he will leave behind command, comfort, and renown in search of fresh lands, fresh danger, and perhaps the love he has not entirely stopped seeking.
+          </p>
+        </div>
+      </section>
+    </article>
+
+    <div class="back-link">
+      <a class="button" href="heroes.html">Back to Heroes</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>The Lost Mine c 2026 Bhargav Dave</p>
+    </div>
+  </footer>
+</body>
+</html>
