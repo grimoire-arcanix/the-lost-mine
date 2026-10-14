@@ -4,53 +4,43 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Lost Mine | Robin</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Uncial+Antiqua&display=swap"
-    rel="stylesheet"
-  />
+  <meta name="description" content="The would-be hero who became one through grief and resolve" />
+  <link rel="icon" href="assets/codex-emblem.svg" type="image/svg+xml" />
+  <link rel="canonical" href="https://grimoire-arcanix.github.io/the-lost-mine/robin.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="The Lost Mine | Robin" />
+  <meta property="og:description" content="The would-be hero who became one through grief and resolve" />
+  <meta property="og:url" content="https://grimoire-arcanix.github.io/the-lost-mine/robin.html" />
+  <meta property="og:image" content="https://grimoire-arcanix.github.io/the-lost-mine/assets/optimized/lostmine-960.jpg" />
+  <meta property="og:image:alt" content="Artwork for the Lost Mine of Phandelver" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="stylesheet" href="style.css" />
-  <style>
-    body { background: linear-gradient(rgba(248,242,226,0.78), rgba(248,242,226,0.78)), url("assets/img/robinbg.png"); background-size: cover; background-position: center; background-attachment: fixed; }
-    .profile-wrap { width: min(100% - 2rem, 1100px); margin: 0 auto; padding: 2rem 0 3rem; }
-    .profile-card { display: grid; grid-template-columns: 300px 1fr; gap: 1.5rem; background: rgba(255,248,236,0.92); border: 1px solid rgba(30,20,8,0.2); border-radius: 24px; padding: 1.5rem; box-shadow: 0 14px 34px rgba(20,13,6,0.16); }
-    .profile-sidebar img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 18px; border: 1px solid rgba(30,20,8,0.2); }
-    .profile-meta { margin-top: 1rem; background: rgba(255,255,255,0.42); border-radius: 16px; padding: 0.9rem 1rem; }
-    .profile-meta p { margin: 0.35rem 0; }
-    .profile-content h1 { margin-bottom: 0.35rem; }
-    .profile-subtitle { margin-top: 0; color: #24180b; }
-    .profile-story { margin-top: 1.2rem; font-size: 1.06rem; line-height: 1.72; }
-    .profile-story p { margin: 0 0 1rem; }
-    .back-link { text-align: center; margin-top: 1.25rem; }
-    @media (max-width: 800px) { .profile-card { grid-template-columns: 1fr; } body { background-attachment: scroll; } }
-  </style>
 </head>
-<body>
-  <header class="site-header compact-header">
-    <div class="container">
-      <h1>Robin</h1>
-      <p class="subtitle">Human Archer</p>
+<body class="hero-robin" style="--emblem: url('assets/optimized/robinbg-480.webp')">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="assets/codex-emblem.svg" width="36" height="36" alt="" />The Lost Mine</a>
       <nav class="main-nav" aria-label="Main navigation">
         <a href="index.html">Chronicle</a>
-        <a href="heroes.html" class="active">Heroes</a>
+        <a href="heroes.html" aria-current="location">Heroes</a>
         <a href="gallery.html">Gallery</a>
       </nav>
     </div>
   </header>
 
-  <main class="profile-wrap">
-    <article class="profile-card">
-      <aside class="profile-sidebar">
-        <img src="assets/img/robin.png" alt="Robin" />
-        <div class="profile-meta">
+  <main id="main" tabindex="-1" class="container profile-wrap">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Chronicle</a> / <a href="heroes.html">The company</a> / <span aria-current="page">Robin</span></nav><article class="profile-card">
+      <div class="profile-sidebar">
+        <picture><source type="image/webp" srcset="assets/optimized/robin-480.webp 480w, assets/optimized/robin-960.webp 736w" sizes="(max-width: 540px) calc(100vw - 80px), 320px" /><img src="assets/optimized/robin-960.jpg" srcset="assets/optimized/robin-480.jpg 480w, assets/optimized/robin-960.jpg 736w" sizes="(max-width: 540px) calc(100vw - 80px), 320px" width="736" height="1104" alt="Robin" loading="eager" decoding="async" /></picture>
+        <div class="profile-emblem" aria-hidden="true"></div><div class="profile-meta">
           <p><strong>Lineage:</strong> Human</p>
           <p><strong>Style:</strong> Archer</p>
           <p><strong>Outlook:</strong> Lawful Good</p>
           <p><strong>Homeland:</strong> Thundertree</p>
           <p><strong>Cause:</strong> Reclaim the ruins</p>
         </div>
-      </aside>
+      </div>
 
       <section class="profile-content">
         <p class="eyebrow">Character Chronicle</p>
@@ -71,15 +61,9 @@
       </section>
     </article>
 
-    <div class="back-link">
-      <a class="button" href="heroes.html">Back to Heroes</a>
-    </div>
+    <nav class="profile-traversal" aria-label="Character chronicles"><a href="quarion.html">← Magus Quarion Andvang</a><a href="index.html#epilogue">Return to the epilogue</a><a href="hammer.html">Hammer →</a></nav>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>The Lost Mine c 2026 Bhargav Dave</p>
-    </div>
-  </footer>
+  <footer class="site-footer"><div class="container footer-inner"><p>The Lost Mine · A campaign remembered</p><p>© 2026 Bhargav Dave</p></div></footer>
 </body>
 </html>

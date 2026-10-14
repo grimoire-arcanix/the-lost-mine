@@ -4,179 +4,33 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Lost Mine | Heroes</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Uncial+Antiqua&display=swap"
-    rel="stylesheet"
-  />
+  <meta name="description" content="Meet Lady Iris, Flint, Seraphina, Quarion, Robin, and Hammer, the company of this Lost Mine of Phandelver campaign." />
+  <link rel="icon" href="assets/codex-emblem.svg" type="image/svg+xml" />
+  <link rel="canonical" href="https://grimoire-arcanix.github.io/the-lost-mine/heroes.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="The Lost Mine | Heroes" />
+  <meta property="og:description" content="Meet Lady Iris, Flint, Seraphina, Quarion, Robin, and Hammer, the company of this Lost Mine of Phandelver campaign." />
+  <meta property="og:url" content="https://grimoire-arcanix.github.io/the-lost-mine/heroes.html" />
+  <meta property="og:image" content="https://grimoire-arcanix.github.io/the-lost-mine/assets/optimized/lostmine-960.jpg" />
+  <meta property="og:image:alt" content="Artwork for the Lost Mine of Phandelver" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="stylesheet" href="style.css" />
-  <style>
-    .heroes-page-header,
-    .site-footer {
-      text-align: center;
-    }
-
-    .heroes-page-lead {
-      max-width: 980px;
-      margin: 0 auto 2.5rem;
-      text-align: center;
-    }
-
-    .heroes-page-lead p {
-      margin: 0;
-    }
-
-    .heroes-grid {
-      display: grid;
-      grid-template-columns: repeat(6, minmax(0, 1fr));
-      gap: 1rem;
-      align-items: stretch;
-    }
-
-    .hero-tile {
-      position: relative;
-      min-height: 420px;
-      border-radius: 22px;
-      overflow: hidden;
-      border: 1px solid rgba(30, 20, 8, 0.28);
-      box-shadow: 0 12px 32px rgba(20, 13, 6, 0.18);
-      background: rgba(255, 250, 240, 0.74);
-      isolation: isolate;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      text-decoration: none;
-    }
-
-    .hero-tile:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 18px 38px rgba(20, 13, 6, 0.24);
-      text-decoration: none;
-    }
-
-    .hero-bg {
-      position: absolute;
-      inset: 0;
-      background-size: cover;
-      background-position: center;
-      transform: scale(1.04);
-    }
-
-    .hero-bg::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        linear-gradient(to top, rgba(20, 13, 6, 0.92) 0%, rgba(20, 13, 6, 0.54) 38%, rgba(20, 13, 6, 0.2) 100%);
-    }
-
-    .hero-tile-content {
-      position: relative;
-      z-index: 2;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 1rem;
-      color: #f7f0df;
-      text-align: center;
-    }
-
-    .hero-portrait-wrap {
-      position: absolute;
-      top: 1rem;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      overflow: hidden;
-      border: 4px solid rgba(248, 242, 226, 0.92);
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.32);
-      background: rgba(255, 250, 240, 0.94);
-      z-index: 3;
-    }
-
-    .hero-portrait-wrap img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .hero-heading {
-      margin-top: 7.75rem;
-      text-align: center;
-    }
-
-    .hero-heading h2 {
-      margin-bottom: 0.45rem;
-      font-size: 1.15rem;
-      color: #f7f0df;
-    }
-
-    .hero-role {
-      margin: 0;
-      font-size: 0.88rem;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: rgba(247, 240, 223, 0.94);
-    }
-
-    .hero-cta {
-      margin-top: 0.9rem;
-      display: inline-block;
-      align-self: center;
-      padding: 0.55rem 0.9rem;
-      border-radius: 999px;
-      background: rgba(255, 248, 236, 0.18);
-      border: 1px solid rgba(255, 248, 236, 0.34);
-      color: #f7f0df;
-      font-size: 0.95rem;
-    }
-
-    @media (max-width: 1600px) {
-      .heroes-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-      }
-    }
-
-    @media (max-width: 980px) {
-      .heroes-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .hero-tile {
-        min-height: 390px;
-      }
-    }
-
-    @media (max-width: 640px) {
-      .heroes-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .hero-tile {
-        min-height: 360px;
-      }
-    }
-  </style>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <div class="site-shell">
-    <header class="site-header compact-header heroes-page-header">
-      <div class="container">
-        <p class="eyebrow">The Codex</p>
-        <h1>Heroes</h1>
-        <p class="subtitle">Meet the heroes!</p>
+    <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="assets/codex-emblem.svg" width="36" height="36" alt="" />The Lost Mine</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Chronicle</a>
+        <a href="heroes.html" aria-current="page">Heroes</a>
+        <a href="gallery.html">Gallery</a>
+      </nav>
+    </div>
+  </header>
 
-        <nav class="main-nav" aria-label="Main navigation">
-          <a href="index.html">Chronicle</a>
-          <a href="heroes.html" class="active">Heroes</a>
-          <a href="gallery.html">Gallery</a>
-        </nav>
-      </div>
-    </header>
-
-    <main class="container page-content">
+    <main id="main" tabindex="-1" class="container page-content"><div class="page-title"><p class="eyebrow">The company · Six character chronicles</p><h1>Heroes</h1><p class="subtitle">Meet the heroes!</p></div>
       <section class="heroes-page-lead">
         <h2>The Company of the Story</h2>
         <p>
@@ -185,97 +39,93 @@
       </section>
 
       <section class="heroes-grid">
-        <a class="hero-tile" href="iris.html">
-          <div class="hero-bg" style="background-image: url('assets/img/irisbg.png');"></div>
+        <a class="hero-tile hero-iris" href="iris.html">
+          <div class="hero-bg" style="background-image: url('assets/optimized/irisbg-480.webp');"></div>
           <div class="hero-portrait-wrap">
-            <img src="assets/img/iris.png" alt="Lady Iris Vicaria" />
+            <picture><source type="image/webp" srcset="assets/optimized/iris-480.webp 480w, assets/optimized/iris-960.webp 800w" sizes="(max-width: 540px) calc(100vw - 48px), (max-width: 800px) 44vw, 360px" /><img src="assets/optimized/iris-960.jpg" srcset="assets/optimized/iris-480.jpg 480w, assets/optimized/iris-960.jpg 800w" sizes="(max-width: 540px) calc(100vw - 48px), (max-width: 800px) 44vw, 360px" width="800" height="1280" alt="Lady Iris Vicaria" loading="eager" decoding="async" /></picture>
           </div>
           <div class="hero-tile-content">
             <div class="hero-heading">
               <h2>Lady Iris Vicaria</h2>
               <p class="hero-role">Human Fighter</p>
             </div>
-            <span class="hero-cta">Open Profile</span>
+            <p class="hero-hook">The noble who turned a ruined frontier into a seat of order</p><span class="hero-cta">Open Profile</span>
           </div>
         </a>
 
-        <a class="hero-tile" href="flint.html">
-          <div class="hero-bg" style="background-image: url('assets/img/flintbg.png');"></div>
+        <a class="hero-tile hero-flint" href="flint.html">
+          <div class="hero-bg" style="background-image: url('assets/optimized/flintbg-480.webp');"></div>
           <div class="hero-portrait-wrap">
-            <img src="assets/img/flint.png" alt="Rev. Flint Rockseeker" />
+            <picture><source type="image/webp" srcset="assets/optimized/flint-480.webp 480w, assets/optimized/flint-960.webp 832w" sizes="(max-width: 540px) calc(100vw - 48px), (max-width: 800px) 44vw, 360px" /><img src="assets/optimized/flint-960.jpg" srcset="assets/optimized/flint-480.jpg 480w, assets/optimized/flint-960.jpg 832w" sizes="(max-width: 540px) calc(100vw - 48px), (max-width: 800px) 44vw, 360px" width="832" height="1248" alt="Rev. Flint Rockseeker" loading="eager" decoding="async" /></picture>
           </div>
           <div class="hero-tile-content">
             <div class="hero-heading">
               <h2>Rev. Flint Rockseeker</h2>
               <p class="hero-role">Dwarf Cleric</p>
             </div>
-            <span class="hero-cta">Open Profile</span>
+            <p class="hero-hook">The conscience-driven priest who reclaimed the mine of his bloodline</p><span class="hero-cta">Open Profile</span>
           </div>
         </a>
 
-        <a class="hero-tile" href="seraphina.html">
-          <div class="hero-bg" style="background-image: url('assets/img/seraphinabg.png');"></div>
+        <a class="hero-tile hero-seraphina" href="seraphina.html">
+          <div class="hero-bg" style="background-image: url('assets/optimized/seraphinabg-480.webp');"></div>
           <div class="hero-portrait-wrap">
-            <img src="assets/img/seraphina.png" alt="Seraphina Thumbleton" />
+            <picture><source type="image/webp" srcset="assets/optimized/seraphina-480.webp 480w, assets/optimized/seraphina-960.webp 960w" sizes="(max-width: 540px) calc(100vw - 48px), (max-width: 800px) 44vw, 360px" /><img src="assets/optimized/seraphina-960.jpg" srcset="assets/optimized/seraphina-480.jpg 480w, assets/optimized/seraphina-960.jpg 960w" sizes="(max-width: 540px) calc(100vw - 48px), (max-width: 800px) 44vw, 360px" width="1024" height="1536" alt="Seraphina Thumbleton" loading="eager" decoding="async" /></picture>
           </div>
           <div class="hero-tile-content">
             <div class="hero-heading">
               <h2>Seraphina Thumbleton</h2>
               <p class="hero-role">Halfling Rogue</p>
             </div>
-            <span class="hero-cta">Open Profile</span>
+            <p class="hero-hook">The survivor who turned betrayal into influence</p><span class="hero-cta">Open Profile</span>
           </div>
         </a>
 
-        <a class="hero-tile" href="quarion.html">
-          <div class="hero-bg" style="background-image: url('assets/img/quarionbg.png');"></div>
+        <a class="hero-tile hero-quarion" href="quarion.html">
+          <div class="hero-bg" style="background-image: url('assets/optimized/quarionbg-480.webp');"></div>
           <div class="hero-portrait-wrap">
-            <img src="assets/img/quarion.png" alt="Magus Quarion Andvang" />
+            <picture><source type="image/webp" srcset="assets/optimized/quarion-480.webp 480w, assets/optimized/quarion-960.webp 608w" sizes="(max-width: 540px) calc(100vw - 48px), (max-width: 800px) 44vw, 360px" /><img src="assets/optimized/quarion-960.jpg" srcset="assets/optimized/quarion-480.jpg 480w, assets/optimized/quarion-960.jpg 608w" sizes="(max-width: 540px) calc(100vw - 48px), (max-width: 800px) 44vw, 360px" width="608" height="768" alt="Magus Quarion Andvang" loading="lazy" decoding="async" /></picture>
           </div>
           <div class="hero-tile-content">
             <div class="hero-heading">
               <h2>Magus Quarion Andvang</h2>
               <p class="hero-role">High Elf Wizard</p>
             </div>
-            <span class="hero-cta">Open Profile</span>
+            <p class="hero-hook">The scholar of Oghma who turned ruined stone back into sanctuary</p><span class="hero-cta">Open Profile</span>
           </div>
         </a>
 
-        <a class="hero-tile" href="robin.html">
-          <div class="hero-bg" style="background-image: url('assets/img/robinbg.png');"></div>
+        <a class="hero-tile hero-robin" href="robin.html">
+          <div class="hero-bg" style="background-image: url('assets/optimized/robinbg-480.webp');"></div>
           <div class="hero-portrait-wrap">
-            <img src="assets/img/robin.png" alt="Robin" />
+            <picture><source type="image/webp" srcset="assets/optimized/robin-480.webp 480w, assets/optimized/robin-960.webp 736w" sizes="(max-width: 540px) calc(100vw - 48px), (max-width: 800px) 44vw, 360px" /><img src="assets/optimized/robin-960.jpg" srcset="assets/optimized/robin-480.jpg 480w, assets/optimized/robin-960.jpg 736w" sizes="(max-width: 540px) calc(100vw - 48px), (max-width: 800px) 44vw, 360px" width="736" height="1104" alt="Robin" loading="lazy" decoding="async" /></picture>
           </div>
           <div class="hero-tile-content">
             <div class="hero-heading">
               <h2>Robin</h2>
               <p class="hero-role">Human Archer</p>
             </div>
-            <span class="hero-cta">Open Profile</span>
+            <p class="hero-hook">The would-be hero who became one through grief and resolve</p><span class="hero-cta">Open Profile</span>
           </div>
         </a>
 
-        <a class="hero-tile" href="hammer.html">
-          <div class="hero-bg" style="background-image: url('assets/img/hammerbg.png');"></div>
+        <a class="hero-tile hero-hammer" href="hammer.html">
+          <div class="hero-bg" style="background-image: url('assets/optimized/hammerbg-480.webp');"></div>
           <div class="hero-portrait-wrap">
-            <img src="assets/img/hammer.png" alt="Hammer" />
+            <picture><source type="image/webp" srcset="assets/optimized/hammer-480.webp 480w, assets/optimized/hammer-960.webp 960w" sizes="(max-width: 540px) calc(100vw - 48px), (max-width: 800px) 44vw, 360px" /><img src="assets/optimized/hammer-960.jpg" srcset="assets/optimized/hammer-480.jpg 480w, assets/optimized/hammer-960.jpg 960w" sizes="(max-width: 540px) calc(100vw - 48px), (max-width: 800px) 44vw, 360px" width="1024" height="1024" alt="Hammer" loading="lazy" decoding="async" /></picture>
           </div>
           <div class="hero-tile-content">
             <div class="hero-heading">
               <h2>Hammer</h2>
               <p class="hero-role">Half-Orc Barbarian</p>
             </div>
-            <span class="hero-cta">Open Profile</span>
+            <p class="hero-hook">The wandering blade who could never stay bound for long</p><span class="hero-cta">Open Profile</span>
           </div>
         </a>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container">
-        <p>The Lost Mine c 2026 Bhargav Dave</p>
-      </div>
-    </footer>
+    <footer class="site-footer"><div class="container footer-inner"><p>The Lost Mine · A campaign remembered</p><p>© 2026 Bhargav Dave</p></div></footer>
   </div>
 
   <script src="script.js"></script>

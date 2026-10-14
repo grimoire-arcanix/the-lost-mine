@@ -4,188 +4,47 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Lost Mine | Chronicle</title>
-  <meta
-    name="description"
-    content="A living chronicle of a Dungeons & Dragons campaign set in Faerûn."
-  />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Uncial+Antiqua&display=swap"
-    rel="stylesheet"
-  />
+  <meta name="description" content="An illuminated chronicle of the Lost Mine of Phandelver: the Sword Coast, six heroes, and a shared adventure in January 2026." />
+  <link rel="icon" href="assets/codex-emblem.svg" type="image/svg+xml" />
+  <link rel="canonical" href="https://grimoire-arcanix.github.io/the-lost-mine/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="The Lost Mine | Chronicle" />
+  <meta property="og:description" content="An illuminated chronicle of the Lost Mine of Phandelver: the Sword Coast, six heroes, and a shared adventure in January 2026." />
+  <meta property="og:url" content="https://grimoire-arcanix.github.io/the-lost-mine/" />
+  <meta property="og:image" content="https://grimoire-arcanix.github.io/the-lost-mine/assets/optimized/lostmine-960.jpg" />
+  <meta property="og:image:alt" content="Artwork for the Lost Mine of Phandelver" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="stylesheet" href="style.css" />
-  <style>
-    .site-header,
-    .section-intro,
-    .site-footer {
-      text-align: center;
-    }
-
-    .section-heading {
-      text-align: center;
-      max-width: 760px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .intro-card {
-      max-width: 980px;
-      margin: 0 auto;
-    }
-
-    .intro-card .timeline-text p {
-      margin: 0;
-    }
-
-    .timeline-section .container {
-      width: min(100% - 1rem, 1240px);
-    }
-
-    .timeline-entry.compact-gap {
-      margin-top: 3rem;
-      margin-bottom: 3rem;
-    }
-
-    .timeline-entry.medium-gap {
-      margin-top: 4.5rem;
-      margin-bottom: 4.5rem;
-    }
-
-    .timeline-entry.large-gap {
-      margin-top: 6rem;
-      margin-bottom: 6rem;
-    }
-
-    .timeline-entry.xlarge-gap {
-      margin-top: 8rem;
-      margin-bottom: 8rem;
-    }
-
-    .timeline-entry.campaign-gap {
-      margin-top: 4rem;
-      margin-bottom: 4rem;
-    }
-
-    .timeline-entry.epilogue-gap {
-      margin-top: 3.5rem;
-      margin-bottom: 3.5rem;
-    }
-
-    .timeline-entry.no-image .timeline-content {
-      grid-template-columns: 1fr;
-      min-height: unset;
-      max-width: 920px;
-    }
-
-    .timeline-entry.no-image .timeline-text {
-      width: 100%;
-    }
-
-    .name-highlight {
-      font-weight: 700;
-    }
-
-    .timeline-entry {
-      align-items: start;
-      position: relative;
-    }
-
-    .timeline-content {
-      align-self: start;
-      padding: 1.5rem;
-      grid-template-columns: 1.15fr 1.35fr;
-      gap: 1.25rem;
-      min-height: 360px;
-    }
-
-    .timeline-image img {
-      min-height: 310px;
-      aspect-ratio: 4 / 3;
-      object-fit: cover;
-    }
-
-    .timeline-marker {
-      align-self: start;
-      position: relative;
-      z-index: 4;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      padding-top: 18px;
-    }
-
-    .timeline-marker span {
-      box-shadow: 0 10px 24px rgba(20, 13, 6, 0.18);
-    }
-
-    .section-break {
-      text-align: center;
-      max-width: 900px;
-      margin: 5rem auto 2.5rem;
-    }
-
-    .section-break p {
-      margin: 0.5rem 0 0;
-    }
-
-    @media (max-width: 960px) {
-      .timeline-entry.compact-gap,
-      .timeline-entry.medium-gap,
-      .timeline-entry.large-gap,
-      .timeline-entry.xlarge-gap,
-      .timeline-entry.campaign-gap,
-      .timeline-entry.epilogue-gap {
-        margin-top: 2.5rem;
-        margin-bottom: 2.5rem;
-      }
-
-      .timeline-content {
-        min-height: unset;
-        grid-template-columns: 1fr;
-      }
-
-      .timeline-image img {
-        min-height: 260px;
-      }
-
-      .timeline-marker {
-        padding-top: 0;
-      }
-
-      .section-break {
-        margin-top: 3rem;
-      }
-    }
-  </style>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <div class="site-shell">
-    <header class="site-header">
-      <div class="container">
-        <h1>The Lost Mine</h1>
+    <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="assets/codex-emblem.svg" width="36" height="36" alt="" />The Lost Mine</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Chronicle</a>
+        <a href="heroes.html">Heroes</a>
+        <a href="gallery.html">Gallery</a>
+      </nav>
+    </div>
+  </header>
 
-        <nav class="main-nav" aria-label="Main navigation">
-          <a href="index.html" class="active">Chronicle</a>
-          <a href="heroes.html">Heroes</a>
-          <a href="gallery.html">Gallery</a>
-        </nav>
-      </div>
-    </header>
-
-    <main>
+    <main id="main" tabindex="-1">
+      <section class="opening container" aria-labelledby="cover-title">
+        <div class="opening-copy"><p class="eyebrow">A Sword Coast chronicle · January 2026</p><h1 id="cover-title">The Lost Mine</h1><p class="subtitle">A mine lost to time. A company bound by adventure. A story worth keeping.</p>
+          <div class="hero-actions"><a class="button" href="#prologue">Begin the chronicle <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="#campaign">Enter the campaign</a></div>
+          <div class="opening-links"><a href="heroes.html">Meet the company</a><a href="gallery.html">Memories around the table</a></div>
+        </div><figure class="opening-art"><picture><source type="image/webp" srcset="assets/optimized/lostmine-480.webp 480w, assets/optimized/lostmine-960.webp 960w" sizes="(max-width: 800px) calc(100vw - 48px), 560px" /><img src="assets/optimized/lostmine-960.jpg" srcset="assets/optimized/lostmine-480.jpg 480w, assets/optimized/lostmine-960.jpg 960w" sizes="(max-width: 800px) calc(100vw - 48px), 560px" width="1920" height="1080" alt="Artwork for The Lost Mine of Phandelver" loading="eager" decoding="async" fetchpriority="high" /></picture><figcaption>The Lost Mine of Phandelver · The illustrated archive</figcaption></figure>
+      </section>
+      <div class="archive-strip container"><span>As scribed by the High Wizard of Neverwinter</span><span>39 entries · Six heroes · One shared adventure</span></div>
       <section class="section-intro container">
         <div class="section-heading">
           <h2>A Tale on the Sword Coast</h2>
         </div>
 
-        <article class="timeline-content intro-card">
-          <div class="timeline-image">
-            <img
-              src="assets/img/lostmine.jpg"
-              alt="Artwork for The Lost Mine of Phandelver"
-            />
-          </div>
+        <article class="intro-card">
+
           <div class="timeline-text">
             <p>
               The following details the entire story of <strong>The Lost Mine of Phandelver</strong>
@@ -198,31 +57,33 @@
               plots and intrigues to come. Years are mentioned in most of the prologue, and all the names of
               various characters are taken from historical annexes. The prologue mainly plays out as a set of
               years and corresponding events, and the epilogue as a brief glimpse of things to come, the main
-              expedition details the adventures of <span class="name-highlight">Rev. Flint Rockseeker</span>,
-              <span class="name-highlight">Lady Iris Vicaria</span>,
-              <span class="name-highlight">Magus Quarion And-vang</span>,
-              <span class="name-highlight">Miss Seraphina Thumbleton</span> and two warriors simply called
-              <span class="name-highlight">Hammer</span> and <span class="name-highlight">Robin</span> that
+              expedition details the adventures of <a class="name-highlight" href="flint.html">Rev. Flint Rockseeker</a>,
+              <a class="name-highlight" href="iris.html">Lady Iris Vicaria</a>,
+              <a class="name-highlight" href="quarion.html">Magus Quarion And-vang</a>,
+              <a class="name-highlight" href="seraphina.html">Miss Seraphina Thumbleton</a> and two warriors simply called
+              <a class="name-highlight" href="hammer.html">Hammer</a> and <a class="name-highlight" href="robin.html">Robin</a> that
               led to the discovery of the Mine.
             </p>
           </div>
         </article>
       </section>
 
+      <nav class="chapter-nav" aria-label="Chronicle chapters"><div class="container chapter-nav-inner"><div class="chapter-nav-links"><a href="#prologue">Prologue</a><a href="#campaign">Campaign</a><a href="#epilogue">Epilogue</a><a href="#unfinished-threads">Threads</a></div><a class="contents-link" href="#contents">Contents</a></div></nav>
+      <nav id="contents" class="chapter-index container" aria-labelledby="contents-title"><p class="eyebrow">Find your place</p><h2 id="contents-title">Within this volume</h2><div class="index-grid"><div><h3><a href="#prologue">The Prologue</a></h3><ol><li><a href="#the-vision-of-prince-maenoth">The Vision of Prince Maenoth</a></li><li><a href="#the-phandelver-pact">The Phandelver Pact</a></li><li><a href="#the-year-of-winters-wrath">The Year of Winter’s Wrath</a></li><li><a href="#mount-hotenow-erupts">Mount Hotenow Erupts</a></li><li><a href="#venomfang-falls-upon-thundertree">Venomfang Falls Upon Thundertree</a></li><li><a href="#the-mine-is-found-and-the-trap-is-set">The Mine is Found and the Trap is Set</a></li></ol><details class="prologue-index"><summary>All 23 dated events</summary><ol><li><a href="#the-vision-of-prince-maenoth">The Vision of Prince Maenoth</a></li><li><a href="#castle-cragmaw-and-phandelver-founded">Castle Cragmaw and Phandelver Founded</a></li><li><a href="#a-bustling-settlement-rises">A Bustling Settlement Rises</a></li><li><a href="#the-search-in-the-sword-mountains">The Search in the Sword Mountains</a></li><li><a href="#ice-spire-hold-and-the-hidden-cavern">Ice Spire Hold and the Hidden Cavern</a></li><li><a href="#trade-towns-and-the-forges-foundations">Trade, Towns, and the Forge’s Foundations</a></li><li><a href="#the-phandelver-pact">The Phandelver Pact</a></li><li><a href="#the-birth-of-the-black-spider">The Birth of the Black Spider</a></li><li><a href="#dawnbringer-and-the-thayan-interest">Dawnbringer and the Thayan Interest</a></li><li><a href="#wealth-draws-predators">Wealth Draws Predators</a></li><li><a href="#talon-given-to-the-black-hawk">Talon Given to the Black Hawk</a></li><li><a href="#the-cult-closes-in">The Cult Closes In</a></li><li><a href="#the-year-of-winters-wrath">The Year of Winter’s Wrath</a></li><li><a href="#five-centuries-of-loss-and-hidden-schemes">Five Centuries of Loss and Hidden Schemes</a></li><li><a href="#the-prophecy-stirs-the-dragons">The Prophecy Stirs the Dragons</a></li><li><a href="#mount-hotenow-erupts">Mount Hotenow Erupts</a></li><li><a href="#phandalins-factions-take-shape">Phandalin’s Factions Take Shape</a></li><li><a href="#venomfang-falls-upon-thundertree">Venomfang Falls Upon Thundertree</a></li><li><a href="#the-cragmaw-threat-grows">The Cragmaw Threat Grows</a></li><li><a href="#lady-hilda-becomes-the-glass-staff">Lady Hilda Becomes the Glass Staff</a></li><li><a href="#seraphina-comes-to-phandalin">Seraphina Comes to Phandalin</a></li><li><a href="#the-rockseekers-begin-the-expedition">The Rockseekers Begin the Expedition</a></li><li><a href="#the-mine-is-found-and-the-trap-is-set">The Mine is Found and the Trap is Set</a></li></ol></details></div><div><h3><a href="#campaign">The Campaign</a></h3><ol><li><a href="#the-goblin-ambush-on-the-triboar-trail">The Goblin Ambush on the Triboar Trail</a></li><li><a href="#phandalin-and-the-redbrand-menace">Phandalin and the Redbrand Menace</a></li><li><a href="#the-fall-of-glass-staff-and-the-road-to-cragmaw">The Fall of Glass Staff and the Road to Cragmaw</a></li><li><a href="#wave-echo-cave-and-the-fall-of-the-black-spider">Wave Echo Cave and the Fall of the Black Spider</a></li></ol></div><div><h3><a href="#epilogue">The Epilogue</a></h3><ol><li><a href="#lady-iris-and-the-rebirth-of-tressendar-manor">Lady Iris and the Rebirth of Tressendar Manor</a></li><li><a href="#flint-lightbringer-and-the-sanctification-of-the-mine">Flint, Lightbringer, and the Sanctification of the Mine</a></li><li><a href="#seraphina-and-the-black-network">Seraphina and the Black Network</a></li><li><a href="#quarion-and-the-restoration-of-castle-crags">Quarion and the Restoration of Castle Crags</a></li><li><a href="#hammer-warlord-by-accident">Hammer, Warlord by Accident</a></li><li><a href="#robin-and-the-mustering-for-thundertree">Robin and the Mustering for Thundertree</a></li></ol></div><div><h3><a href="#unfinished-threads">Unfinished Threads</a></h3><ol><li><a href="#venomfang-and-the-ruin-of-thundertree">Venomfang and the Ruin of Thundertree</a></li><li><a href="#the-red-wizards-at-old-owl-well">The Red Wizards at Old Owl Well</a></li><li><a href="#the-banshees-of-thundertree">The Banshees of Thundertree</a></li><li><a href="#cryovain-the-winters-wrath-awakens">Cryovain, the Winter’s Wrath, Awakens</a></li><li><a href="#wyvern-tor-and-the-orcish-splinter-host">Wyvern Tor and the Orcish Splinter Host</a></li><li><a href="#the-dragon-queen-and-the-edge-of-apocalypse">The Dragon Queen and the Edge of Apocalypse</a></li></ol></div></div></nav>
       <section id="timeline" class="timeline-section">
         <div class="container">
-          <div class="section-heading">
-            <h2>Part I: Prologue</h2>
+          <div class="section-break" id="prologue" data-chapter>
+            <p class="eyebrow">I · Before the company</p><h2>Part I: Prologue</h2>
           </div>
 
           <div class="timeline">
-            <article class="timeline-entry left compact-gap">
+            <article id="the-vision-of-prince-maenoth" class="timeline-entry left compact-gap">
               <div class="timeline-marker">
                 <span>637 DR</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img src="assets/img/637.png" alt="Year 637 DR event" />
+                  <picture><source type="image/webp" srcset="assets/optimized/637-480.webp 480w, assets/optimized/637-960.webp 960w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" /><img src="assets/optimized/637-960.jpg" srcset="assets/optimized/637-480.jpg 480w, assets/optimized/637-960.jpg 960w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" width="1024" height="800" alt="Illustration: The Vision of Prince Maenoth" loading="lazy" decoding="async" /></picture>
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Year 637 D.R.</p>
@@ -239,13 +100,13 @@
               </div>
             </article>
 
-            <article class="timeline-entry right compact-gap">
+            <article id="castle-cragmaw-and-phandelver-founded" class="timeline-entry right compact-gap">
               <div class="timeline-marker">
                 <span>638 DR</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img src="assets/img/638.png" alt="Year 638 DR event" />
+                  <picture><source type="image/webp" srcset="assets/optimized/638-480.webp 480w, assets/optimized/638-960.webp 960w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" /><img src="assets/optimized/638-960.jpg" srcset="assets/optimized/638-480.jpg 480w, assets/optimized/638-960.jpg 960w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" width="976" height="761" alt="Illustration: Castle Cragmaw and Phandelver Founded" loading="lazy" decoding="async" /></picture>
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Year 638 D.R.</p>
@@ -261,13 +122,13 @@
               </div>
             </article>
 
-            <article class="timeline-entry left medium-gap">
+            <article id="a-bustling-settlement-rises" class="timeline-entry left medium-gap">
               <div class="timeline-marker">
                 <span>640–650 DR</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img src="assets/img/640-650.png" alt="Years 640 to 650 DR event" />
+                  <picture><source type="image/webp" srcset="assets/optimized/640-650-480.webp 480w, assets/optimized/640-650-960.webp 960w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" /><img src="assets/optimized/640-650-960.jpg" srcset="assets/optimized/640-650-480.jpg 480w, assets/optimized/640-650-960.jpg 960w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" width="1200" height="1061" alt="Illustration: A Bustling Settlement Rises" loading="lazy" decoding="async" /></picture>
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Years 640–650 D.R.</p>
@@ -282,13 +143,13 @@
               </div>
             </article>
 
-            <article class="timeline-entry right large-gap">
+            <article id="the-search-in-the-sword-mountains" class="timeline-entry right large-gap">
               <div class="timeline-marker">
                 <span>650–700 DR</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img src="assets/img/650-700.png" alt="Years 650 to 700 DR event" />
+                  <picture><source type="image/webp" srcset="assets/optimized/650-700-480.webp 480w, assets/optimized/650-700-960.webp 920w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" /><img src="assets/optimized/650-700-960.jpg" srcset="assets/optimized/650-700-480.jpg 480w, assets/optimized/650-700-960.jpg 920w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" width="920" height="517" alt="Illustration: The Search in the Sword Mountains" loading="lazy" decoding="async" /></picture>
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Years 650–700 D.R.</p>
@@ -302,13 +163,13 @@
               </div>
             </article>
 
-            <article class="timeline-entry left medium-gap">
+            <article id="ice-spire-hold-and-the-hidden-cavern" class="timeline-entry left medium-gap">
               <div class="timeline-marker">
                 <span>700–725 DR</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img src="assets/img/700-725.png" alt="Years 700 to 725 DR event" />
+                  <picture><source type="image/webp" srcset="assets/optimized/700-725-480.webp 480w, assets/optimized/700-725-960.webp 800w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" /><img src="assets/optimized/700-725-960.jpg" srcset="assets/optimized/700-725-480.jpg 480w, assets/optimized/700-725-960.jpg 800w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" width="800" height="450" alt="Illustration: Ice Spire Hold and the Hidden Cavern" loading="lazy" decoding="async" /></picture>
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Years 700–725 D.R.</p>
@@ -323,13 +184,13 @@
               </div>
             </article>
 
-            <article class="timeline-entry right xlarge-gap">
+            <article id="trade-towns-and-the-forges-foundations" class="timeline-entry right xlarge-gap">
               <div class="timeline-marker">
                 <span>730–790 DR</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img src="assets/img/730-790.png" alt="Years 730 to 790 DR event" />
+                  <picture><source type="image/webp" srcset="assets/optimized/730-790-480.webp 480w, assets/optimized/730-790-960.webp 640w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" /><img src="assets/optimized/730-790-960.jpg" srcset="assets/optimized/730-790-480.jpg 480w, assets/optimized/730-790-960.jpg 640w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" width="640" height="695" alt="Illustration: Trade, Towns, and the Forge’s Foundations" loading="lazy" decoding="async" /></picture>
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Years 730–790 D.R.</p>
@@ -347,13 +208,13 @@
               </div>
             </article>
 
-            <article class="timeline-entry left medium-gap">
+            <article id="the-phandelver-pact" class="timeline-entry left medium-gap">
               <div class="timeline-marker">
                 <span>811 DR</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img src="assets/img/811.png" alt="Year 811 DR event" />
+                  <picture><source type="image/webp" srcset="assets/optimized/811-480.webp 348w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" /><img src="assets/optimized/811-960.jpg" srcset="assets/optimized/811-480.jpg 348w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" width="348" height="317" alt="Illustration: The Phandelver Pact" loading="lazy" decoding="async" /></picture>
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Year 811 D.R.</p>
@@ -369,13 +230,13 @@
               </div>
             </article>
 
-            <article class="timeline-entry right compact-gap">
+            <article id="the-birth-of-the-black-spider" class="timeline-entry right compact-gap">
               <div class="timeline-marker">
                 <span>c. 815 DR</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img src="assets/img/815.png" alt="Circa 815 DR event" />
+                  <picture><source type="image/webp" srcset="assets/optimized/815-480.webp 480w, assets/optimized/815-960.webp 899w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" /><img src="assets/optimized/815-960.jpg" srcset="assets/optimized/815-480.jpg 480w, assets/optimized/815-960.jpg 899w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" width="899" height="1153" alt="Illustration: The Birth of the Black Spider" loading="lazy" decoding="async" /></picture>
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Year Circa 815 D.R.</p>
@@ -390,13 +251,13 @@
               </div>
             </article>
 
-            <article class="timeline-entry left large-gap">
+            <article id="dawnbringer-and-the-thayan-interest" class="timeline-entry left large-gap">
               <div class="timeline-marker">
                 <span>c. 890 DR</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img src="assets/img/890.png" alt="Circa 890 DR event" />
+                  <picture><source type="image/webp" srcset="assets/optimized/890-480.webp 464w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" /><img src="assets/optimized/890-960.jpg" srcset="assets/optimized/890-480.jpg 464w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" width="464" height="696" alt="Illustration: Dawnbringer and the Thayan Interest" loading="lazy" decoding="async" /></picture>
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Year Circa 890 D.R.</p>
@@ -413,13 +274,13 @@
               </div>
             </article>
 
-            <article class="timeline-entry right compact-gap">
+            <article id="wealth-draws-predators" class="timeline-entry right compact-gap">
               <div class="timeline-marker">
                 <span>908 DR</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img src="assets/img/908.png" alt="Year 908 DR event" />
+                  <picture><source type="image/webp" srcset="assets/optimized/908-480.webp 480w, assets/optimized/908-960.webp 736w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" /><img src="assets/optimized/908-960.jpg" srcset="assets/optimized/908-480.jpg 480w, assets/optimized/908-960.jpg 736w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" width="736" height="736" alt="Illustration: Wealth Draws Predators" loading="lazy" decoding="async" /></picture>
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Year 908 D.R.</p>
@@ -433,13 +294,13 @@
               </div>
             </article>
 
-            <article class="timeline-entry left medium-gap">
+            <article id="talon-given-to-the-black-hawk" class="timeline-entry left medium-gap">
               <div class="timeline-marker">
                 <span>926 DR</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img src="assets/img/926.png" alt="Year 926 DR event" />
+                  <picture><source type="image/webp" srcset="assets/optimized/926-480.webp 480w, assets/optimized/926-960.webp 895w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" /><img src="assets/optimized/926-960.jpg" srcset="assets/optimized/926-480.jpg 480w, assets/optimized/926-960.jpg 895w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" width="895" height="943" alt="Illustration: Talon Given to the Black Hawk" loading="lazy" decoding="async" /></picture>
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Year 926 D.R.</p>
@@ -454,13 +315,13 @@
               </div>
             </article>
 
-            <article class="timeline-entry right compact-gap">
+            <article id="the-cult-closes-in" class="timeline-entry right compact-gap">
               <div class="timeline-marker">
                 <span>938 DR</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img src="assets/img/938.png" alt="Year 938 DR event" />
+                  <picture><source type="image/webp" srcset="assets/optimized/938-480.webp 480w, assets/optimized/938-960.webp 618w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" /><img src="assets/optimized/938-960.jpg" srcset="assets/optimized/938-480.jpg 480w, assets/optimized/938-960.jpg 618w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" width="618" height="1000" alt="Illustration: The Cult Closes In" loading="lazy" decoding="async" /></picture>
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Year 938 D.R.</p>
@@ -474,13 +335,13 @@
               </div>
             </article>
 
-            <article class="timeline-entry left compact-gap">
+            <article id="the-year-of-winters-wrath" class="timeline-entry left compact-gap">
               <div class="timeline-marker">
                 <span>939 DR</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img src="assets/img/939.png" alt="Year 939 DR event" />
+                  <picture><source type="image/webp" srcset="assets/optimized/939-480.webp 480w, assets/optimized/939-960.webp 960w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" /><img src="assets/optimized/939-960.jpg" srcset="assets/optimized/939-480.jpg 480w, assets/optimized/939-960.jpg 960w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" width="2000" height="1469" alt="Illustration: The Year of Winter’s Wrath" loading="lazy" decoding="async" /></picture>
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Year 939 D.R.</p>
@@ -505,13 +366,13 @@
               </div>
             </article>
 
-            <article class="timeline-entry right xlarge-gap">
+            <article id="five-centuries-of-loss-and-hidden-schemes" class="timeline-entry right xlarge-gap">
               <div class="timeline-marker">
                 <span>950–1450 DR</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img src="assets/img/950-1450.png" alt="Years 950 to 1450 DR event" />
+                  <picture><source type="image/webp" srcset="assets/optimized/950-1450-480.webp 480w, assets/optimized/950-1450-960.webp 770w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" /><img src="assets/optimized/950-1450-960.jpg" srcset="assets/optimized/950-1450-480.jpg 480w, assets/optimized/950-1450-960.jpg 770w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" width="770" height="1000" alt="Illustration: Five Centuries of Loss and Hidden Schemes" loading="lazy" decoding="async" /></picture>
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Years 950–1450 D.R.</p>
@@ -538,13 +399,13 @@
               </div>
             </article>
 
-            <article class="timeline-entry left large-gap">
+            <article id="the-prophecy-stirs-the-dragons" class="timeline-entry left large-gap">
               <div class="timeline-marker">
                 <span>1462 DR</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img src="assets/img/1462.png" alt="Year 1462 DR event" />
+                  <picture><source type="image/webp" srcset="assets/optimized/1462-480.webp 480w, assets/optimized/1462-960.webp 799w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" /><img src="assets/optimized/1462-960.jpg" srcset="assets/optimized/1462-480.jpg 480w, assets/optimized/1462-960.jpg 799w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" width="799" height="750" alt="Illustration: The Prophecy Stirs the Dragons" loading="lazy" decoding="async" /></picture>
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Year 1462 D.R.</p>
@@ -565,13 +426,13 @@
               </div>
             </article>
 
-            <article class="timeline-entry right compact-gap">
+            <article id="mount-hotenow-erupts" class="timeline-entry right compact-gap">
               <div class="timeline-marker">
                 <span>1463 DR</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img src="assets/img/1463.png" alt="Year 1463 DR event" />
+                  <picture><source type="image/webp" srcset="assets/optimized/1463-480.webp 480w, assets/optimized/1463-960.webp 640w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" /><img src="assets/optimized/1463-960.jpg" srcset="assets/optimized/1463-480.jpg 480w, assets/optimized/1463-960.jpg 640w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" width="640" height="465" alt="Illustration: Mount Hotenow Erupts" loading="lazy" decoding="async" /></picture>
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Year 1463 D.R.</p>
@@ -586,13 +447,13 @@
               </div>
             </article>
 
-            <article class="timeline-entry left medium-gap">
+            <article id="phandalins-factions-take-shape" class="timeline-entry left medium-gap">
               <div class="timeline-marker">
                 <span>1465–1480 DR</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img src="assets/img/1465-1480.png" alt="Years 1465 to 1480 DR event" />
+                  <picture><source type="image/webp" srcset="assets/optimized/1465-1480-480.webp 480w, assets/optimized/1465-1480-960.webp 960w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" /><img src="assets/optimized/1465-1480-960.jpg" srcset="assets/optimized/1465-1480-480.jpg 480w, assets/optimized/1465-1480-960.jpg 960w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" width="1080" height="748" alt="Illustration: Phandalin’s Factions Take Shape" loading="lazy" decoding="async" /></picture>
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Years 1465–1480 D.R.</p>
@@ -615,13 +476,13 @@
               </div>
             </article>
 
-            <article class="timeline-entry right compact-gap">
+            <article id="venomfang-falls-upon-thundertree" class="timeline-entry right compact-gap">
               <div class="timeline-marker">
                 <span>1482 DR</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img src="assets/img/1482.png" alt="Year 1482 DR event" />
+                  <picture><source type="image/webp" srcset="assets/optimized/1482-480.webp 480w, assets/optimized/1482-960.webp 960w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" /><img src="assets/optimized/1482-960.jpg" srcset="assets/optimized/1482-480.jpg 480w, assets/optimized/1482-960.jpg 960w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" width="1024" height="1024" alt="Illustration: Venomfang Falls Upon Thundertree" loading="lazy" decoding="async" /></picture>
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Year 1482 D.R.</p>
@@ -636,13 +497,13 @@
               </div>
             </article>
 
-            <article class="timeline-entry left compact-gap">
+            <article id="the-cragmaw-threat-grows" class="timeline-entry left compact-gap">
               <div class="timeline-marker">
                 <span>1485 DR</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img src="assets/img/1485.png" alt="Year 1485 DR event" />
+                  <picture><source type="image/webp" srcset="assets/optimized/1485-480.webp 480w, assets/optimized/1485-960.webp 960w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" /><img src="assets/optimized/1485-960.jpg" srcset="assets/optimized/1485-480.jpg 480w, assets/optimized/1485-960.jpg 960w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" width="1024" height="1536" alt="Illustration: The Cragmaw Threat Grows" loading="lazy" decoding="async" /></picture>
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Year 1485 D.R.</p>
@@ -659,13 +520,13 @@
               </div>
             </article>
 
-            <article class="timeline-entry right compact-gap">
+            <article id="lady-hilda-becomes-the-glass-staff" class="timeline-entry right compact-gap">
               <div class="timeline-marker">
                 <span>1486 DR</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img src="assets/img/1486.png" alt="Year 1486 DR event" />
+                  <picture><source type="image/webp" srcset="assets/optimized/1486-480.webp 480w, assets/optimized/1486-960.webp 960w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" /><img src="assets/optimized/1486-960.jpg" srcset="assets/optimized/1486-480.jpg 480w, assets/optimized/1486-960.jpg 960w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" width="1024" height="1536" alt="Illustration: Lady Hilda Becomes the Glass Staff" loading="lazy" decoding="async" /></picture>
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Year 1486 D.R.</p>
@@ -683,13 +544,13 @@
               </div>
             </article>
 
-            <article class="timeline-entry left compact-gap">
+            <article id="seraphina-comes-to-phandalin" class="timeline-entry left compact-gap">
               <div class="timeline-marker">
                 <span>1487 DR</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img src="assets/img/1487.png" alt="Year 1487 DR event" />
+                  <picture><source type="image/webp" srcset="assets/optimized/1487-480.webp 480w, assets/optimized/1487-960.webp 647w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" /><img src="assets/optimized/1487-960.jpg" srcset="assets/optimized/1487-480.jpg 480w, assets/optimized/1487-960.jpg 647w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" width="647" height="840" alt="Illustration: Seraphina Comes to Phandalin" loading="lazy" decoding="async" /></picture>
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Year 1487 D.R.</p>
@@ -703,13 +564,13 @@
               </div>
             </article>
 
-            <article class="timeline-entry right medium-gap">
+            <article id="the-rockseekers-begin-the-expedition" class="timeline-entry right medium-gap">
               <div class="timeline-marker">
                 <span>1489 DR</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img src="assets/img/1489.png" alt="Year 1489 DR event" />
+                  <picture><source type="image/webp" srcset="assets/optimized/1489-480.webp 474w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" /><img src="assets/optimized/1489-960.jpg" srcset="assets/optimized/1489-480.jpg 474w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" width="474" height="593" alt="Illustration: The Rockseekers Begin the Expedition" loading="lazy" decoding="async" /></picture>
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Year 1489 D.R.</p>
@@ -724,13 +585,13 @@
               </div>
             </article>
 
-            <article class="timeline-entry left campaign-gap">
+            <article id="the-mine-is-found-and-the-trap-is-set" class="timeline-entry left campaign-gap">
               <div class="timeline-marker">
                 <span>1491 DR</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img src="assets/img/1491.png" alt="Year 1491 DR event" />
+                  <picture><source type="image/webp" srcset="assets/optimized/1491-480.webp 480w, assets/optimized/1491-960.webp 637w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" /><img src="assets/optimized/1491-960.jpg" srcset="assets/optimized/1491-480.jpg 480w, assets/optimized/1491-960.jpg 637w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" width="637" height="358" alt="Illustration: The Mine is Found and the Trap is Set" loading="lazy" decoding="async" /></picture>
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">Year 1491 D.R.</p>
@@ -748,21 +609,21 @@
               </div>
             </article>
 
-            <div class="section-break">
-              <h2>Part II: The Lost Mine, 1491 D.R.</h2>
+            <div class="section-break" id="campaign" data-chapter>
+              <p class="eyebrow">II · The expedition</p><h2>Part II: The Lost Mine, 1491 D.R.</h2>
               <p>
                 Here begins the campaign proper: the expedition, the ambush, the journey into Phandalin,
                 and the discovery of the threads binding the Lost Mine to every power along the Sword Coast.
               </p>
             </div>
 
-            <article class="timeline-entry right campaign-gap">
+            <article id="the-goblin-ambush-on-the-triboar-trail" class="timeline-entry right campaign-gap campaign-chapter">
               <div class="timeline-marker">
                 <span>1491 DR</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img src="assets/img/campaign1.png" alt="Campaign chapter one in 1491 DR" />
+                  <picture><source type="image/webp" srcset="assets/optimized/campaign1-480.webp 480w, assets/optimized/campaign1-960.webp 960w" sizes="(max-width: 800px) calc(100vw - 64px), 1000px" /><img src="assets/optimized/campaign1-960.jpg" srcset="assets/optimized/campaign1-480.jpg 480w, assets/optimized/campaign1-960.jpg 960w" sizes="(max-width: 800px) calc(100vw - 64px), 1000px" width="2000" height="1000" alt="Illustration: The Goblin Ambush on the Triboar Trail" loading="lazy" decoding="async" /></picture>
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">1491 D.R. — Campaign Chapter I</p>
@@ -791,13 +652,13 @@
               </div>
             </article>
 
-            <article class="timeline-entry left campaign-gap">
+            <article id="phandalin-and-the-redbrand-menace" class="timeline-entry left campaign-gap campaign-chapter">
               <div class="timeline-marker">
                 <span>1491 DR</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img src="assets/img/campaign2.png" alt="Campaign chapter two in 1491 DR" />
+                  <picture><source type="image/webp" srcset="assets/optimized/campaign2-480.webp 480w, assets/optimized/campaign2-960.webp 640w" sizes="(max-width: 800px) calc(100vw - 64px), 1000px" /><img src="assets/optimized/campaign2-960.jpg" srcset="assets/optimized/campaign2-480.jpg 480w, assets/optimized/campaign2-960.jpg 640w" sizes="(max-width: 800px) calc(100vw - 64px), 1000px" width="640" height="939" alt="Illustration: Phandalin and the Redbrand Menace" loading="lazy" decoding="async" /></picture>
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">1491 D.R. — Campaign Chapter II</p>
@@ -828,13 +689,13 @@
               </div>
             </article>
 
-            <article class="timeline-entry right campaign-gap">
+            <article id="the-fall-of-glass-staff-and-the-road-to-cragmaw" class="timeline-entry right campaign-gap campaign-chapter">
               <div class="timeline-marker">
                 <span>1491 DR</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img src="assets/img/campaign3.png" alt="Campaign chapter three in 1491 DR" />
+                  <picture><source type="image/webp" srcset="assets/optimized/campaign3-480.webp 480w, assets/optimized/campaign3-960.webp 960w" sizes="(max-width: 800px) calc(100vw - 64px), 1000px" /><img src="assets/optimized/campaign3-960.jpg" srcset="assets/optimized/campaign3-480.jpg 480w, assets/optimized/campaign3-960.jpg 960w" sizes="(max-width: 800px) calc(100vw - 64px), 1000px" width="2048" height="1152" alt="Illustration: The Fall of Glass Staff and the Road to Cragmaw" loading="lazy" decoding="async" /></picture>
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">1491 D.R. — Campaign Chapter III</p>
@@ -872,13 +733,13 @@
               </div>
             </article>
 
-            <article class="timeline-entry left campaign-gap">
+            <article id="wave-echo-cave-and-the-fall-of-the-black-spider" class="timeline-entry left campaign-gap campaign-chapter">
               <div class="timeline-marker">
                 <span>1491 DR</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img src="assets/img/campaign4.png" alt="Campaign chapter four in 1491 DR" />
+                  <picture><source type="image/webp" srcset="assets/optimized/campaign4-480.webp 480w, assets/optimized/campaign4-960.webp 633w" sizes="(max-width: 800px) calc(100vw - 64px), 1000px" /><img src="assets/optimized/campaign4-960.jpg" srcset="assets/optimized/campaign4-480.jpg 480w, assets/optimized/campaign4-960.jpg 633w" sizes="(max-width: 800px) calc(100vw - 64px), 1000px" width="633" height="1000" alt="Illustration: Wave Echo Cave and the Fall of the Black Spider" loading="lazy" decoding="async" /></picture>
                 </div>
                 <div class="timeline-text">
                   <p class="timeline-tag">1491 D.R. — Campaign Chapter IV</p>
@@ -924,17 +785,18 @@
               </div>
             </article>
 
-            <div class="section-break">
-              <h2>Part III: Epilogue</h2>
+            <div class="section-break" id="epilogue" data-chapter>
+              <p class="eyebrow">III · The lives that followed</p><h2>Part III: Epilogue</h2>
             </div>
 
-            <article class="timeline-entry left epilogue-gap no-image">
+            <article id="lady-iris-and-the-rebirth-of-tressendar-manor" class="timeline-entry left epilogue-gap no-image">
               <div class="timeline-marker">
                 <span>Aftermath</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-text">
                   <h3>Lady Iris and the Rebirth of Tressendar Manor</h3>
+                  <div class="profile-reference"><a href="iris.html">Read Iris’s character chronicle ↗</a></div>
                   <p>
                     After receiving the sword of <strong>Lady Aldith Tressendar</strong>, <strong>Lady Iris Vicaria</strong>
                     takes up the burden of restoration as well as honor. She reinstates <strong>Tressendar Manor</strong>
@@ -949,13 +811,14 @@
               </div>
             </article>
 
-            <article class="timeline-entry right epilogue-gap no-image">
+            <article id="flint-lightbringer-and-the-sanctification-of-the-mine" class="timeline-entry right epilogue-gap no-image">
               <div class="timeline-marker">
                 <span>Aftermath</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-text">
                   <h3>Flint, Lightbringer, and the Sanctification of the Mine</h3>
+                  <div class="profile-reference"><a href="flint.html">Read Flint’s character chronicle ↗</a></div>
                   <p>
                     <strong>Rev. Flint Rockseeker</strong>, bearing <strong>Lightbringer</strong>, returns to the
                     Lost Mine and uses its holy radiance to reconsecrate the shrine of <strong>Dumathoin</strong>,
@@ -970,13 +833,14 @@
               </div>
             </article>
 
-            <article class="timeline-entry left epilogue-gap no-image">
+            <article id="seraphina-and-the-black-network" class="timeline-entry left epilogue-gap no-image">
               <div class="timeline-marker">
                 <span>Aftermath</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-text">
                   <h3>Seraphina and the Black Network</h3>
+                  <div class="profile-reference"><a href="seraphina.html">Read Seraphina’s character chronicle ↗</a></div>
                   <p>
                     In the political silence that follows the campaign, <strong>Halia Thornton</strong> recognizes in
                     <strong>Seraphina Thumbleton</strong> a rare combination of wit, ruthlessness, and patience.
@@ -990,13 +854,14 @@
               </div>
             </article>
 
-            <article class="timeline-entry right epilogue-gap no-image">
+            <article id="quarion-and-the-restoration-of-castle-crags" class="timeline-entry right epilogue-gap no-image">
               <div class="timeline-marker">
                 <span>Aftermath</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-text">
                   <h3>Quarion and the Restoration of Castle Crags</h3>
+                  <div class="profile-reference"><a href="quarion.html">Read Quarion’s character chronicle ↗</a></div>
                   <p>
                     <strong>Magus Quarion</strong> is rescued from <strong>Cragmaw Castle</strong> by a joint host of the
                     <strong>Lords’ Alliance</strong> and the <strong>Order of the Gauntlet</strong>, whose forces break
@@ -1011,13 +876,14 @@
               </div>
             </article>
 
-            <article class="timeline-entry left epilogue-gap no-image">
+            <article id="hammer-warlord-by-accident" class="timeline-entry left epilogue-gap no-image">
               <div class="timeline-marker">
                 <span>Aftermath</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-text">
                   <h3>Hammer, Warlord by Accident</h3>
+                  <div class="profile-reference"><a href="hammer.html">Read Hammer’s character chronicle ↗</a></div>
                   <p>
                     In the power vacuum left by the fall of <strong>Klarg</strong> and <strong>Grol</strong>,
                     <strong>Hammer</strong> becomes a figure of rough legend among goblins and orcs alike. Warriors who
@@ -1030,13 +896,14 @@
               </div>
             </article>
 
-            <article class="timeline-entry right epilogue-gap no-image">
+            <article id="robin-and-the-mustering-for-thundertree" class="timeline-entry right epilogue-gap no-image">
               <div class="timeline-marker">
                 <span>Aftermath</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-text">
                   <h3>Robin and the Mustering for Thundertree</h3>
+                  <div class="profile-reference"><a href="robin.html">Read Robin’s character chronicle ↗</a></div>
                   <p>
                     <strong>Robin</strong>, together with his wolf companion, gathers allies with growing determination
                     and begins to muster a force to reclaim his lost homeland of <strong>Thundertree</strong>. The
@@ -1048,21 +915,21 @@
               </div>
             </article>
 
-            <div class="section-break">
-              <h2>Unfinished Threads and Things to Come</h2>
+            <div class="section-break" id="unfinished-threads" data-chapter>
+              <p class="eyebrow">IV · Beyond the last page</p><h2>Unfinished Threads and Things to Come</h2>
               <p>
                 Though the Lost Mine has been found and its immediate enemies cast down, the wider Sword Coast remains
                 restless. Many dangers were never faced, and others only now begin to stir.
               </p>
             </div>
 
-            <article class="timeline-entry left epilogue-gap">
+            <article id="venomfang-and-the-ruin-of-thundertree" class="timeline-entry left epilogue-gap">
               <div class="timeline-marker">
                 <span>Threat I</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img src="assets/img/epilogue1.png" alt="Venomfang at Thundertree" />
+                  <picture><source type="image/webp" srcset="assets/optimized/epilogue1-480.webp 350w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" /><img src="assets/optimized/epilogue1-960.jpg" srcset="assets/optimized/epilogue1-480.jpg 350w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" width="350" height="405" alt="Venomfang at Thundertree" loading="lazy" decoding="async" /></picture>
                 </div>
                 <div class="timeline-text">
                   <h3>Venomfang and the Ruin of Thundertree</h3>
@@ -1078,13 +945,13 @@
               </div>
             </article>
 
-            <article class="timeline-entry right epilogue-gap">
+            <article id="the-red-wizards-at-old-owl-well" class="timeline-entry right epilogue-gap">
               <div class="timeline-marker">
                 <span>Threat II</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img src="assets/img/epilogue2.png" alt="Red Wizards at Old Owl Well" />
+                  <picture><source type="image/webp" srcset="assets/optimized/epilogue2-480.webp 480w, assets/optimized/epilogue2-960.webp 736w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" /><img src="assets/optimized/epilogue2-960.jpg" srcset="assets/optimized/epilogue2-480.jpg 480w, assets/optimized/epilogue2-960.jpg 736w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" width="736" height="1109" alt="Red Wizards at Old Owl Well" loading="lazy" decoding="async" /></picture>
                 </div>
                 <div class="timeline-text">
                   <h3>The Red Wizards at Old Owl Well</h3>
@@ -1099,13 +966,13 @@
               </div>
             </article>
 
-            <article class="timeline-entry left epilogue-gap">
+            <article id="the-banshees-of-thundertree" class="timeline-entry left epilogue-gap">
               <div class="timeline-marker">
                 <span>Threat III</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img src="assets/img/epilogue3.png" alt="The banshees of Thundertree" />
+                  <picture><source type="image/webp" srcset="assets/optimized/epilogue3-480.webp 480w, assets/optimized/epilogue3-960.webp 960w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" /><img src="assets/optimized/epilogue3-960.jpg" srcset="assets/optimized/epilogue3-480.jpg 480w, assets/optimized/epilogue3-960.jpg 960w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" width="1200" height="776" alt="The banshees of Thundertree" loading="lazy" decoding="async" /></picture>
                 </div>
                 <div class="timeline-text">
                   <h3>The Banshees of Thundertree</h3>
@@ -1120,13 +987,13 @@
               </div>
             </article>
 
-            <article class="timeline-entry right epilogue-gap">
+            <article id="cryovain-the-winters-wrath-awakens" class="timeline-entry right epilogue-gap">
               <div class="timeline-marker">
                 <span>Threat IV</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img src="assets/img/epilogue4.png" alt="Cryovain atop Icespire Hold" />
+                  <picture><source type="image/webp" srcset="assets/optimized/epilogue4-480.webp 480w, assets/optimized/epilogue4-960.webp 512w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" /><img src="assets/optimized/epilogue4-960.jpg" srcset="assets/optimized/epilogue4-480.jpg 480w, assets/optimized/epilogue4-960.jpg 512w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" width="512" height="1024" alt="Cryovain atop Icespire Hold" loading="lazy" decoding="async" /></picture>
                 </div>
                 <div class="timeline-text">
                   <h3>Cryovain, the Winter’s Wrath, Awakens</h3>
@@ -1140,13 +1007,13 @@
               </div>
             </article>
 
-            <article class="timeline-entry left epilogue-gap">
+            <article id="wyvern-tor-and-the-orcish-splinter-host" class="timeline-entry left epilogue-gap">
               <div class="timeline-marker">
                 <span>Threat V</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img src="assets/img/epilogue5.png" alt="Orcs of Wyvern Tor" />
+                  <picture><source type="image/webp" srcset="assets/optimized/epilogue5-480.webp 480w, assets/optimized/epilogue5-960.webp 960w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" /><img src="assets/optimized/epilogue5-960.jpg" srcset="assets/optimized/epilogue5-480.jpg 480w, assets/optimized/epilogue5-960.jpg 960w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" width="1600" height="1600" alt="Orcs of Wyvern Tor" loading="lazy" decoding="async" /></picture>
                 </div>
                 <div class="timeline-text">
                   <h3>Wyvern Tor and the Orcish Splinter Host</h3>
@@ -1161,13 +1028,13 @@
               </div>
             </article>
 
-            <article class="timeline-entry right epilogue-gap">
+            <article id="the-dragon-queen-and-the-edge-of-apocalypse" class="timeline-entry right epilogue-gap">
               <div class="timeline-marker">
                 <span>Threat VI</span>
               </div>
               <div class="timeline-content">
                 <div class="timeline-image">
-                  <img src="assets/img/epilogue6.png" alt="The Cult of the Dragon and Tiamat" />
+                  <picture><source type="image/webp" srcset="assets/optimized/epilogue6-480.webp 480w, assets/optimized/epilogue6-960.webp 960w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" /><img src="assets/optimized/epilogue6-960.jpg" srcset="assets/optimized/epilogue6-480.jpg 480w, assets/optimized/epilogue6-960.jpg 960w" sizes="(max-width: 540px) calc(100vw - 100px), (max-width: 800px) 35vw, 360px" width="1920" height="1081" alt="The Cult of the Dragon and Tiamat" loading="lazy" decoding="async" /></picture>
                 </div>
                 <div class="timeline-text">
                   <h3>The Dragon Queen and the Edge of Apocalypse</h3>
@@ -1202,13 +1069,10 @@
           </a>
         </div>
       </section>
+    <a class="back-top" href="#top" aria-label="Back to top">↑ Top</a>
     </main>
 
-    <footer class="site-footer">
-      <div class="container">
-        <p>The Lost Mine c 2026 Bhargav Dave</p>
-      </div>
-    </footer>
+    <footer class="site-footer"><div class="container footer-inner"><p>The Lost Mine · A campaign remembered</p><p>© 2026 Bhargav Dave</p></div></footer>
   </div>
 
   <script src="script.js"></script>

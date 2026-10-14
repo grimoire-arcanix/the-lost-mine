@@ -4,337 +4,93 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Lost Mine | Gallery</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Uncial+Antiqua&display=swap"
-    rel="stylesheet"
-  />
+  <meta name="description" content="Photographs from around the table: maps, character standees, and memories of the Lost Mine campaign in January 2026." />
+  <link rel="icon" href="assets/codex-emblem.svg" type="image/svg+xml" />
+  <link rel="canonical" href="https://grimoire-arcanix.github.io/the-lost-mine/gallery.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="The Lost Mine | Gallery" />
+  <meta property="og:description" content="Photographs from around the table: maps, character standees, and memories of the Lost Mine campaign in January 2026." />
+  <meta property="og:url" content="https://grimoire-arcanix.github.io/the-lost-mine/gallery.html" />
+  <meta property="og:image" content="https://grimoire-arcanix.github.io/the-lost-mine/assets/optimized/lostmine-960.jpg" />
+  <meta property="og:image:alt" content="Artwork for the Lost Mine of Phandelver" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="stylesheet" href="style.css" />
-  <style>
-    .gallery-page-header,
-    .page-lead,
-    .site-footer {
-      text-align: center;
-    }
-
-    .gallery-page-lead {
-      max-width: 900px;
-      margin: 0 auto 2.5rem;
-    }
-
-    .album-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1rem;
-      align-items: start;
-    }
-
-    .album-card {
-      background: rgba(255, 248, 236, 0.9);
-      border: 1px solid rgba(30, 20, 8, 0.18);
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: 0 10px 24px rgba(20, 13, 6, 0.14);
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
-      cursor: pointer;
-    }
-
-    .album-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 14px 30px rgba(20, 13, 6, 0.2);
-    }
-
-    .album-card img {
-      width: 100%;
-      height: 100%;
-      min-height: 240px;
-      max-height: 340px;
-      object-fit: cover;
-      display: block;
-    }
-
-    .album-empty {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 1.25rem 1.5rem;
-      background: rgba(255, 248, 236, 0.88);
-      border: 1px solid rgba(30, 20, 8, 0.18);
-      border-radius: 18px;
-      box-shadow: 0 10px 24px rgba(20, 13, 6, 0.12);
-      text-align: center;
-    }
-
-    .lightbox {
-      position: fixed;
-      inset: 0;
-      background: rgba(10, 8, 6, 0.88);
-      display: none;
-      align-items: center;
-      justify-content: center;
-      padding: 2rem;
-      z-index: 9999;
-    }
-
-    .lightbox.open {
-      display: flex;
-    }
-
-    .lightbox-inner {
-      position: relative;
-      max-width: min(1200px, 92vw);
-      max-height: 90vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 0.75rem;
-    }
-
-    .lightbox-image {
-      max-width: 100%;
-      max-height: 78vh;
-      border-radius: 14px;
-      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.38);
-      border: 2px solid rgba(248, 242, 226, 0.18);
-      object-fit: contain;
-      background: rgba(255, 248, 236, 0.04);
-    }
-
-    .lightbox-close,
-    .lightbox-prev,
-    .lightbox-next {
-      position: absolute;
-      border: none;
-      border-radius: 999px;
-      background: rgba(255, 248, 236, 0.16);
-      color: #f7f0df;
-      cursor: pointer;
-      backdrop-filter: blur(4px);
-      transition: background 0.2s ease, transform 0.2s ease;
-    }
-
-    .lightbox-close:hover,
-    .lightbox-prev:hover,
-    .lightbox-next:hover {
-      background: rgba(255, 248, 236, 0.28);
-      transform: scale(1.04);
-    }
-
-    .lightbox-close {
-      top: -0.5rem;
-      right: -0.5rem;
-      width: 44px;
-      height: 44px;
-      font-size: 1.4rem;
-      line-height: 1;
-    }
-
-    .lightbox-prev,
-    .lightbox-next {
-      top: 50%;
-      transform: translateY(-50%);
-      width: 48px;
-      height: 48px;
-      font-size: 1.4rem;
-      line-height: 1;
-    }
-
-    .lightbox-prev { left: -4.2rem; }
-    .lightbox-next { right: -4.2rem; }
-
-    @media (max-width: 900px) {
-      .lightbox-prev,
-      .lightbox-next {
-        top: auto;
-        bottom: -3.5rem;
-        transform: none;
-      }
-      .lightbox-prev { left: calc(50% - 60px); }
-      .lightbox-next { right: calc(50% - 60px); }
-      .lightbox-close {
-        top: -0.75rem;
-        right: 0;
-      }
-    }
-
-    @media (max-width: 640px) {
-      .album-grid {
-        grid-template-columns: 1fr;
-      }
-      .album-card img {
-        min-height: 220px;
-      }
-      .lightbox {
-        padding: 1rem;
-      }
-      .lightbox-image {
-        max-height: 72vh;
-      }
-    }
-  </style>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <div class="site-shell">
-    <header class="site-header compact-header gallery-page-header">
-      <div class="container">
-        <p class="eyebrow">The Codex</p>
-        <h1>Gallery</h1>
+    <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="assets/codex-emblem.svg" width="36" height="36" alt="" />The Lost Mine</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Chronicle</a>
+        <a href="heroes.html">Heroes</a>
+        <a href="gallery.html" aria-current="page">Gallery</a>
+      </nav>
+    </div>
+  </header>
 
-        <nav class="main-nav" aria-label="Main navigation">
-          <a href="index.html">Chronicle</a>
-          <a href="heroes.html">Heroes</a>
-          <a href="gallery.html" class="active">Gallery</a>
-        </nav>
-      </div>
-    </header>
-
-    <main class="container page-content">
+    <main id="main" tabindex="-1" class="container page-content"><div class="page-title"><p class="eyebrow">January 2026 · Around the table</p><h1>Gallery</h1><p class="subtitle">Photo Archive</p></div>
       <section class="gallery-page-lead">
-        <h2>The Visual Archive</h2>
+        <h2>The Visual Archive</h2><p>The maps, the company, and the people who brought the story to life.</p>
       </section>
 
-      <section id="album" class="album-grid" aria-label="Campaign gallery"></section>
-
-      <div id="album-empty" class="album-empty" hidden>
-        <p>
-          No gallery images have been added yet. Put images inside
-          <strong>assets/img/gallery/</strong>, then run <strong>build_gallery.py</strong>.
-        </p>
-      </div>
+      <section id="album" class="album-grid" aria-label="Campaign photographs">
+<!-- GALLERY:START -->
+        <figure class="album-card" style="--photo-position: center 42%">
+          <a href="assets/optimized/gallery/20260111_114826.jpg-1600.jpg" data-original="assets/img/gallery/20260111_114826.jpg" data-caption="The company takes its place on the map." aria-label="View photograph 1: The company takes its place on the map.">
+            <picture><source type="image/webp" srcset="assets/optimized/gallery/20260111_114826.jpg-640.webp" /><img src="assets/optimized/gallery/20260111_114826.jpg-640.jpg" width="640" height="480" alt="Character standees lined up across a Sword Coast map, with a laptop behind them." loading="lazy" decoding="async" /></picture>
+          </a><figcaption><span class="photo-number">MEMORY 01</span>The company takes its place on the map.</figcaption>
+        </figure>
+        <figure class="album-card" style="--photo-position: center 42%">
+          <a href="assets/optimized/gallery/20260111_114832.jpg-1600.jpg" data-original="assets/img/gallery/20260111_114832.jpg" data-caption="Six heroes, ready for the road." aria-label="View photograph 2: Six heroes, ready for the road.">
+            <picture><source type="image/webp" srcset="assets/optimized/gallery/20260111_114832.jpg-640.webp" /><img src="assets/optimized/gallery/20260111_114832.jpg-640.jpg" width="640" height="480" alt="A closer view of character standees arranged on a Sword Coast map." loading="lazy" decoding="async" /></picture>
+          </a><figcaption><span class="photo-number">MEMORY 02</span>Six heroes, ready for the road.</figcaption>
+        </figure>
+        <figure class="album-card" style="--photo-position: center 45%">
+          <a href="assets/optimized/gallery/IMG-20260111-WA0000.jpeg-1600.jpg" data-original="assets/img/gallery/IMG-20260111-WA0000.jpeg" data-caption="Maps and notes before the adventure." aria-label="View photograph 3: Maps and notes before the adventure.">
+            <picture><source type="image/webp" srcset="assets/optimized/gallery/IMG-20260111-WA0000.jpeg-640.webp" /><img src="assets/optimized/gallery/IMG-20260111-WA0000.jpeg-640.jpg" width="640" height="1138" alt="Campaign notes and a printed fantasy map spread over a blue tabletop." loading="lazy" decoding="async" /></picture>
+          </a><figcaption><span class="photo-number">MEMORY 03</span>Maps and notes before the adventure.</figcaption>
+        </figure>
+        <figure class="album-card" style="--photo-position: center 45%">
+          <a href="assets/optimized/gallery/IMG-20260119-WA0008.jpg-1600.jpg" data-original="assets/img/gallery/IMG-20260119-WA0008.jpg" data-caption="The story unfolds around the table." aria-label="View photograph 4: The story unfolds around the table.">
+            <picture><source type="image/webp" srcset="assets/optimized/gallery/IMG-20260119-WA0008.jpg-640.webp" /><img src="assets/optimized/gallery/IMG-20260119-WA0008.jpg-640.jpg" width="640" height="480" alt="Players seated around a table covered with character sheets, with a game master standing behind a screen." loading="lazy" decoding="async" /></picture>
+          </a><figcaption><span class="photo-number">MEMORY 04</span>The story unfolds around the table.</figcaption>
+        </figure>
+        <figure class="album-card" style="--photo-position: center 45%">
+          <a href="assets/optimized/gallery/IMG-20260119-WA0011.jpg-1600.jpg" data-original="assets/img/gallery/IMG-20260119-WA0011.jpg" data-caption="A shared afternoon of adventure." aria-label="View photograph 5: A shared afternoon of adventure.">
+            <picture><source type="image/webp" srcset="assets/optimized/gallery/IMG-20260119-WA0011.jpg-640.webp" /><img src="assets/optimized/gallery/IMG-20260119-WA0011.jpg-640.jpg" width="640" height="480" alt="A view of the gaming table, players and game master beside a bright window." loading="lazy" decoding="async" /></picture>
+          </a><figcaption><span class="photo-number">MEMORY 05</span>A shared afternoon of adventure.</figcaption>
+        </figure>
+        <figure class="album-card" style="--photo-position: center 58%">
+          <a href="assets/optimized/gallery/IMG-20260119-WA0036.jpg-1600.jpg" data-original="assets/img/gallery/IMG-20260119-WA0036.jpg" data-caption="Between the pages of the chronicle." aria-label="View photograph 6: Between the pages of the chronicle.">
+            <picture><source type="image/webp" srcset="assets/optimized/gallery/IMG-20260119-WA0036.jpg-640.webp" /><img src="assets/optimized/gallery/IMG-20260119-WA0036.jpg-640.jpg" width="640" height="853" alt="A view along the gaming table, with character sheets, drinks and players gathered beneath ceiling lights." loading="lazy" decoding="async" /></picture>
+          </a><figcaption><span class="photo-number">MEMORY 06</span>Between the pages of the chronicle.</figcaption>
+        </figure>
+        <figure class="album-card" style="--photo-position: center 58%">
+          <a href="assets/optimized/gallery/IMG-20260119-WA0039.jpg-1600.jpg" data-original="assets/img/gallery/IMG-20260119-WA0039.jpg" data-caption="The people behind the company." aria-label="View photograph 7: The people behind the company.">
+            <picture><source type="image/webp" srcset="assets/optimized/gallery/IMG-20260119-WA0039.jpg-640.webp" /><img src="assets/optimized/gallery/IMG-20260119-WA0039.jpg-640.jpg" width="640" height="853" alt="Players around the gaming table, with papers and a printed character portrait in the foreground." loading="lazy" decoding="async" /></picture>
+          </a><figcaption><span class="photo-number">MEMORY 07</span>The people behind the company.</figcaption>
+        </figure>
+        <figure class="album-card" style="--photo-position: center 58%">
+          <a href="assets/optimized/gallery/IMG-20260119-WA0042.jpg-1600.jpg" data-original="assets/img/gallery/IMG-20260119-WA0042.jpg" data-caption="Memories beyond the last chapter." aria-label="View photograph 8: Memories beyond the last chapter.">
+            <picture><source type="image/webp" srcset="assets/optimized/gallery/IMG-20260119-WA0042.jpg-640.webp" /><img src="assets/optimized/gallery/IMG-20260119-WA0042.jpg-640.jpg" width="640" height="853" alt="The gaming table seen from one end, with players, notes and a character portrait laid out for play." loading="lazy" decoding="async" /></picture>
+          </a><figcaption><span class="photo-number">MEMORY 08</span>Memories beyond the last chapter.</figcaption>
+        </figure>
+<!-- GALLERY:END -->
+      </section><p class="album-note">Select a photograph to look closer. The memories continue beyond the page.</p>
     </main>
 
-    <footer class="site-footer">
-      <div class="container">
-        <p>The Lost Mine c 2026 Bhargav Dave</p>
-      </div>
-    </footer>
+    <footer class="site-footer"><div class="container footer-inner"><p>The Lost Mine · A campaign remembered</p><p>© 2026 Bhargav Dave</p></div></footer>
   </div>
 
-  <div id="lightbox" class="lightbox" aria-hidden="true">
-    <div class="lightbox-inner">
-      <button id="lightbox-close" class="lightbox-close" aria-label="Close image viewer">&times;</button>
-      <button id="lightbox-prev" class="lightbox-prev" aria-label="Previous image">&#10094;</button>
-      <img id="lightbox-image" class="lightbox-image" src="" alt="" />
-      <button id="lightbox-next" class="lightbox-next" aria-label="Next image">&#10095;</button>
-    </div>
-  </div>
-
-  <script>
-    const galleryImages = [
-            "20260111_114826.jpg",
-      "20260111_114832.jpg",
-      "IMG-20260111-WA0000.jpeg",
-      "IMG-20260119-WA0008.jpg",
-      "IMG-20260119-WA0011.jpg",
-      "IMG-20260119-WA0036.jpg",
-      "IMG-20260119-WA0039.jpg",
-      "IMG-20260119-WA0042.jpg"
-    ];
-
-    const galleryFolder = "assets/img/gallery/";
-    const album = document.getElementById("album");
-    const emptyState = document.getElementById("album-empty");
-
-    const lightbox = document.getElementById("lightbox");
-    const lightboxImage = document.getElementById("lightbox-image");
-    const lightboxClose = document.getElementById("lightbox-close");
-    const lightboxPrev = document.getElementById("lightbox-prev");
-    const lightboxNext = document.getElementById("lightbox-next");
-
-    let currentIndex = 0;
-
-    function prettifyFilename(filename) {
-      const base = filename.replace(/\.[^/.]+$/, "");
-      return base
-        .replace(/[-_]+/g, " ")
-        .replace(/\s+/g, " ")
-        .trim()
-        .replace(/\b\w/g, (c) => c.toUpperCase());
-    }
-
-    function openLightbox(index) {
-      currentIndex = index;
-      const file = galleryImages[currentIndex];
-      lightboxImage.src = galleryFolder + file;
-      lightboxImage.alt = prettifyFilename(file);
-      lightbox.classList.add("open");
-      lightbox.setAttribute("aria-hidden", "false");
-      document.body.style.overflow = "hidden";
-    }
-
-    function closeLightbox() {
-      lightbox.classList.remove("open");
-      lightbox.setAttribute("aria-hidden", "true");
-      lightboxImage.src = "";
-      lightboxImage.alt = "";
-      document.body.style.overflow = "";
-    }
-
-    function showPrev() {
-      currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
-      openLightbox(currentIndex);
-    }
-
-    function showNext() {
-      currentIndex = (currentIndex + 1) % galleryImages.length;
-      openLightbox(currentIndex);
-    }
-
-    const usableImages = galleryImages.filter(
-      (item) => item && item !== "__GALLERY_IMAGES__"
-    );
-
-    if (!usableImages.length) {
-      emptyState.hidden = false;
-    } else {
-      usableImages.forEach((file, index) => {
-        const figure = document.createElement("figure");
-        figure.className = "album-card";
-        figure.tabIndex = 0;
-        figure.setAttribute("role", "button");
-        figure.setAttribute("aria-label", `Open ${prettifyFilename(file)}`);
-
-        const img = document.createElement("img");
-        img.src = galleryFolder + file;
-        img.alt = prettifyFilename(file);
-
-        figure.appendChild(img);
-        album.appendChild(figure);
-
-        figure.addEventListener("click", () => openLightbox(index));
-        figure.addEventListener("keydown", (event) => {
-          if (event.key === "Enter" || event.key === " ") {
-            event.preventDefault();
-            openLightbox(index);
-          }
-        });
-      });
-
-      while (galleryImages.length) {
-        galleryImages.pop();
-      }
-      usableImages.forEach((img) => galleryImages.push(img));
-    }
-
-    lightboxClose.addEventListener("click", closeLightbox);
-    lightboxPrev.addEventListener("click", showPrev);
-    lightboxNext.addEventListener("click", showNext);
-
-    lightbox.addEventListener("click", (event) => {
-      if (event.target === lightbox) {
-        closeLightbox();
-      }
-    });
-
-    document.addEventListener("keydown", (event) => {
-      if (!lightbox.classList.contains("open")) return;
-
-      if (event.key === "Escape") closeLightbox();
-      if (event.key === "ArrowLeft") showPrev();
-      if (event.key === "ArrowRight") showNext();
-    });
-  </script>
-
-  <script src="script.js"></script>
+  <dialog id="lightbox" class="lightbox" aria-labelledby="viewer-title">
+    <div class="viewer-header"><h2 id="viewer-title">Memories around the table</h2><button id="lightbox-close" type="button" autofocus>Close <span aria-hidden="true">×</span></button></div>
+    <div class="viewer-stage" aria-busy="false"><img id="lightbox-image" alt="" hidden /></div>
+    <p id="viewer-caption" class="viewer-caption"></p><p id="viewer-status" class="viewer-status" role="status" aria-live="polite"></p>
+    <div class="viewer-controls"><button id="lightbox-prev" type="button">← Previous</button><span id="viewer-count" aria-live="polite"></span><button id="lightbox-next" type="button">Next →</button><a id="viewer-original">Open original photograph</a></div>
+  </dialog>
+  <script src="gallery.js" defer></script>
+  <script src="script.js" defer></script>
 </body>
 </html>

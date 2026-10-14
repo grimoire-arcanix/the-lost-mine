@@ -1,0 +1,66 @@
+[
+  {
+    "file": "20260111_114826.jpg",
+    "sourceBytes": 10727099,
+    "thumbBytes": 32072,
+    "viewerBytes": 195171,
+    "width": 640,
+    "height": 480
+  },
+  {
+    "file": "20260111_114832.jpg",
+    "sourceBytes": 10661562,
+    "thumbBytes": 29940,
+    "viewerBytes": 185749,
+    "width": 640,
+    "height": 480
+  },
+  {
+    "file": "IMG-20260111-WA0000.jpeg",
+    "sourceBytes": 16807412,
+    "thumbBytes": 93944,
+    "viewerBytes": 246834,
+    "width": 640,
+    "height": 1138
+  },
+  {
+    "file": "IMG-20260119-WA0008.jpg",
+    "sourceBytes": 1294393,
+    "thumbBytes": 45990,
+    "viewerBytes": 317943,
+    "width": 640,
+    "height": 480
+  },
+  {
+    "file": "IMG-20260119-WA0011.jpg",
+    "sourceBytes": 1253473,
+    "thumbBytes": 48606,
+    "viewerBytes": 322340,
+    "width": 640,
+    "height": 480
+  },
+  {
+    "file": "IMG-20260119-WA0036.jpg",
+    "sourceBytes": 1181857,
+    "thumbBytes": 61418,
+    "viewerBytes": 255441,
+    "width": 640,
+    "height": 853
+  },
+  {
+    "file": "IMG-20260119-WA0039.jpg",
+    "sourceBytes": 1148210,
+    "thumbBytes": 54136,
+    "viewerBytes": 239191,
+    "width": 640,
+    "height": 853
+  },
+  {
+    "file": "IMG-20260119-WA0042.jpg",
+    "sourceBytes": 1106943,
+    "thumbBytes": 54860,
+    "viewerBytes": 236515,
+    "width": 640,
+    "height": 853
+  }
+]
